@@ -1,0 +1,801 @@
+ 
+HERRAMIENTA PRÁCTICA
+OBRAS QUE FUNCIONAN
+Guía de 12 Estándares de Integridad en la Contratación de Obras Públicas
+
+Elaborado por el Centro de Buen Gobierno e Integridad SCRL
+
+📂 Expandir todo 📁 Colapsar 🖨️ Imprimir
+FASE:
+✦ Todos (12)
+Actuaciones Preparatorias (3)
+Procedimiento de Selección (3)
+Ejecución Contractual (6)
+🔍
+OBRAS QUE FUNCIONAN
+Guía de 12 Estándares de Integridad en la Contratación de Obras Públicas. Herramienta práctica para gestionar riesgos en los principales hitos de la contratación pública, bajo un enfoque de integridad y transparencia.  
+👷 Funcionarios, servidores y empresas que colaboraron para culminar con éxito la obra y pueda funcionar para cerrar brechas
+👥 Sector privado y sociedad civil que realizan seguimiento y veeduría a las obras en cualquiera de sus fases
+📋 Ley General de Contrataciones Pública N° 32069 y su Reglamento D.S. N° 009-2025-EF
+3
+ACTUACIONES
+PREPARATORIAS
+3
+PROCEDIMIENTO
+DE SELECCIÓN
+6
+EJECUCIÓN
+CONTRACTUAL
+Progreso de lectura
+ 
+12 / 12 estándares revisados
+ACTUACIONES PREPARATORIAS
+ 
+3 estándares
+1
+ACTUACIONES PREPARATORIAS
+Declaración Jurada de Intereses y Conflicto de Interés
+2 criterios
+⚠ Riesgo
+▼
+✔ ESTÁNDAR
+La entidad garantiza que todos los funcionarios y servidores vinculados al proceso de contratación presentan su Declaración Jurada de Intereses (DJI) antes de cada acto en que participan y que no existe conflicto de interés entre ellos y el postor adjudicado o contratista. 
+⚠️
+CAPTURA DEL PROCESO
+Funcionarios con vínculos personales, familiares o societarios con el contratista adjudicado toman decisiones que favorecen sus intereses privados sobre el interés público, sin que exista registro que permita identificar ni sancionar el conflicto.
+✔ CRITERIOS DE CUMPLIMIENTO · HAZ CLIC EN CADA CRITERIO PARA VER DÓNDE Y POR QUÉ VERIFICAR
+1
+El 100% de los funcionarios vinculados al proceso de contratación han presentado su DJI con fecha anterior o simultánea al acto en el que participan. (Se indica la lista de funcionarios que deben presentar su DDJJ por estar vinculados a la contratación)
+▼
+🔍
+DÓNDE VERIFICAR
+• Plataforma DJI-CGR: 🔗 appjuradointereses.contraloria.gob.pe
+• Portal de Transparencia de la entidad (Ley N° 27806): sección 'Declaraciones Juradas'.
+💡
+POR QUÉ VERIFICAR
+Verificar que ningún funcionario o servidor decisor tenga vínculos con el adjudicado o contratista. Si la DJI no fue presentada antes del acto, el vínculo no queda documentado y el conflicto de interés es imposible de probar ex post, generando impunidad.
+📋
+BASE NORMATIVA
+Art. 3, 5 y 9 de Ley N° 31227 (Ley DJI).  
+Resolución de Contraloría N° 158- 2021-CG, que reglamenta la Ley 31227
+Art. 30, 31 y 32 de Ley N° 32069.
+Art. 36 del Reglamento D.S. N° 009-2025-EF (FUP).
+2
+La DEC realiza el cruce entre las DJI de los funcionarios participantes en el proceso de contratación* y la FUP del postor que va a ser adjudicado antes de otorgar la buena pro, y el resultado se registra en el expediente de contratación. (*) El cruce de DJI con la FUP es verificado por la entidad o la sociedad civil mediante la plataforma de la CGR, cruzando la información de las DJI presentadas con los representantes, accionistas o miembros del directorio del ganador y/o contratista.
+▼
+🔍
+DÓNDE VERIFICAR
+• RNP – FUP del proveedor: 🔗 oece.gob.pe → RNP → 'Consulta de proveedores' (ingresar RUC).
+• Plataforma DJI-CGR: 🔗 appjuradointereses.contraloria.gob.pe
+• Expediente de contratación (SAIP): buscar informe de cruce DJI-FUP con fecha anterior a la buena pro.
+💡
+POR QUÉ VERIFICAR
+El cruce DJI-FUP realizado antes de la adjudicación o firma del contrato es el  mecanismo que permite verificar un posible conflicto de interés y/o o una causal de impedimento. Si se realiza después, la decisión ya fue tomada y ello representa un gran riesgo de integridad en la contratación, como es nulidad, paralización o controversias que no permitan culminar la obra oportunamente.  
+2
+ACTUACIONES PREPARATORIAS
+Expediente Técnico de Obra (ETO) de calidad y completo
+6 criterios
+⚠ Riesgo
+▼
+✔ ESTÁNDAR
+La entidad aprueba el ETO solo cuando es técnicamente completo, con costos sustentados en precios de mercado, terreno disponible e interferencias identificadas; garantizando que la obra pueda iniciarse, ejecutarse sin interrupciones y culminarse en el plazo y costo previstos. 
+⚠️
+DEFICIENCIAS EN EL ETO, RIESGO DE SUSPENSIÓN, PARALIZACIÓN O SOBRECOSTO
+Un ETO incompleto o sin estudios básicos permite diseñar adicionales y ampliaciones de plazo previsibles que se ejecutan sin competencia durante la obra, transfiriendo recursos públicos al contratista por encima del valor real de la prestación.
+ 
+Si no se reduce este riesgo:
+• Adicionales de obra que superan el 50% del contrato.
+• Paralizaciones por interferencias no identificadas en el ETO.
+• Incremento del precio durante la ejecución del contrato por un ETO incompleto o desactualizado.  
+• Obras que no cumplen su finalidad pública por deficiencias de diseño no detectadas a tiempo.
+✔ CRITERIOS DE CUMPLIMIENTO · HAZ CLIC EN CADA CRITERIO PARA VER DÓNDE Y POR QUÉ VERIFICAR
+1
+La entidad identifica las interferencias y establece un plan para la obtención de las licencias, autorizaciones, permisos, servidumbre y similares por parte de la entidad contratante a fin de no paralizar o suspender la ejecución de la obra.
+▼
+🔍
+DÓNDE VERIFICAR
+• PLADICOP: 🔗 pladicop.oece.gob.pe → expediente → 'Documentos' → descargar ETO → verificar sección de interferencias y plan de permisos.
+• SAIP de la entidad: solicitar oficios a empresas prestadoras de servicios (agua, luz, gas, telecomunicaciones).
+💡
+POR QUÉ VERIFICAR
+Las interferencias con servicios existentes no identificadas en el ETO son la principal causa de paralizaciones durante la ejecución. Si no hay plan de permisos, la obra puede detenerse por meses esperando autorizaciones gestionables antes de la convocatoria.
+📋
+BASE NORMATIVA
+Art. 154.1 lit. f) Reglamento D.S. N° 009-2025-EF (plan de obtención de permisos). Art. 170° Reglamento (contenido del ETO).
+2
+El expediente técnico de obra incluye el sustento de la disponibilidad física del terreno (título de propiedad, acta de transferencia o resolución de afectación en uso vigente) y acta de verificación física.
+▼
+🔍
+DÓNDE VERIFICAR
+• SUNARP en línea: 🔗 sunarp.gob.pe → 'Consulta de partida registral' → verificar titular y cargas del predio.
+• PLADICOP: expediente de contratación → sección documentos → acta de verificación física del terreno.
+• SAIP de la entidad: solicitar el documento de titularidad y el acta de verificación física.
+💡
+POR QUÉ VERIFICAR
+Convocar una obra sin terreno disponible genera un proceso que el contratista sabe que no podrá iniciar normalmente. Un gran porcentaje de obras paralizadas en el Perú tienen problemas con el terreno, detectables antes del inicio.
+📋
+BASE NORMATIVA
+Art. 154.1 lit. e) Reglamento D.S. N° 009-2025-EF (sustento de disponibilidad física del terreno). Art. 176.1 lit. e) Reglamento (condición de inicio del plazo contractual).
+3
+El expediente técnico de obra debe contar con una estructura de costos definida de acuerdo con la complejidad del proyecto.
+▼
+🔍
+DÓNDE VERIFICAR
+• PLADICOP: 🔗 pladicop.oece.gob.pe → expediente → 'Documentos' → descargar ETO → verificar que análisis de precios.
+💡
+POR QUÉ VERIFICAR
+Un ETO sin el sustento adecuado del costo o sin una estructura de costos de acuerdo a la complejidad de la obra puede generar que el mercado no responda a la convocatoria.
+📋
+BASE NORMATIVA
+Art. 170° Reglamento D.S. N° 009-2025-EF (estructura del ETO: presupuesto con análisis de precios y fecha de determinación).   
+Art. 5° lit. b) Ley N° 32069 (principio de eficiencia).
+4
+En el ETO se identifica los riesgos que pueden presentarse durante el proceso de contratación (matriz de riesgos), con especial énfasis en la ejecución contractual.
+▼
+🔍
+DÓNDE VERIFICAR
+• PLADICOP: expediente de contratación → 'Estrategia de contratación' → verificar sección de riesgos.
+• SAIP de la entidad: solicitar la estrategia de contratación completa con la matriz de riesgos de la fase de ejecución.
+💡
+POR QUÉ VERIFICAR
+Los riesgos de ejecución no identificados en el ETO se materializan como adicionales de obra que la entidad no puede rechazar porque no tiene documentación previa que acredite que el riesgo era previsible y debía ser asumido por el contratista.
+📋
+BASE NORMATIVA
+Art. 6, literal c) de la Ley 32069. Gestión de riesgos en contratación pública
+Art. 156° Reglamento.. Numeral 1 y 2. (gestión de riesgos en la estrategia de contratación).
+5
+El expediente de contratación o el ETO incluye acta de consulta pública con lista de asistentes firmada, mecanismo de recojo de aportes, y evidencia de que al menos una observación ciudadana fue incorporada o respondida de manera sustentada en el ETO.
+▼
+🔍
+DÓNDE VERIFICAR
+• SAIP de la entidad: solicitar el acta de consulta pública con lista de asistentes y mecanismo de recojo de aportes.
+• Portal de transparencia de la entidad: verificar publicación del acta de consulta pública, de corresponder.
+• PLADICOP: expediente de contratación → 'Documentos' → buscar acta de consulta pública.
+💡
+POR QUÉ VERIFICAR
+La consulta pública previa al ETO permite que la población beneficiaria identifique errores, omisiones o condiciones locales que el proyectista no conoce. Su ausencia priva al ETO de información crítica que luego genera adicionales y paralizaciones durante la obra.
+📋
+BASE NORMATIVA
+Art. 5, literal d) y g)  de la Ley 32069. Principio de eficiencia e públicidad.   
+Art. 6, literal a) y d) de la Ley 32069. Enfoque de integridad y Gobernanza de la contratación pública.
+6
+El expediente técnico de obra incluye un análisis del proceso constructivo que contemple eficiencia constructiva y prácticas de sostenibilidad.
+▼
+🔍
+DÓNDE VERIFICAR
+• PLADICOP: 🔗 pladicop.oece.gob.pe → expediente → 'Documentos' → descargar ETO → verificar sección 'Proceso constructivo' o 'Metodología constructiva'.
+• SAIP de la entidad: solicitar el ETO completo si no está disponible en PLADICOP.
+💡
+POR QUÉ VERIFICAR
+El análisis del proceso constructivo permite verificar si los rendimientos del presupuesto son coherentes con la metodología propuesta. Su ausencia puede encubrir rendimientos subestimados que inflan el presupuesto, o metodologías inviables que generarán retrasos durante la ejecución.
+📋
+BASE NORMATIVA
+Art. 170.3° Reglamento D.S. N° 009-2025-EF (el ETO incluye análisis del proceso constructivo con eficiencia constructiva y prácticas de sostenibilidad). 
+Art. 5° lit. b) Ley N° 32069 (principio de eficiencia).
+3
+ACTUACIONES PREPARATORIAS
+Estrategia de contratación basada en interacción real con el mercado
+2 criterios
+⚠ Riesgo
+▼
+✔ ESTÁNDAR
+La entidad formula la estrategia de contratación con base en una interacción real con el mercado, incorpora sus resultados en el ETO antes de la convocatoria e implementa el comité de gestión de riesgos cuando corresponda, asegurando que los requisitos del proceso reflejen las capacidades reales del mercado y que la contratación se guíe por el principio de valor por el dinero. 
+⚠️
+DISEÑAR UN ESTRATEGIA DE CONTRATACION SIN INTERACCION REAL CON EL MERCADO.
+Deficiencias en la gestión de riesgos genera procesos de selección con bases que no reflejan las condiciones reales del mercado, ausencia de competencia, o se se adjudica a postores sin capacidad real o a precios que no corresponden al valor de la obra.
+ 
+Si no se reduce este riesgo:
+• Procesos diseñados para favorecer a un postor específico (bases restrictivas no sustentadas).
+• Riesgos identificables en la etapa preparatoria que se materializan en la ejecución del contrato. 
+• Obras paralizadas por causas previsibles no advertidas en la estrategia de contratación.
+✔ CRITERIOS DE CUMPLIMIENTO · HAZ CLIC EN CADA CRITERIO PARA VER DÓNDE Y POR QUÉ VERIFICAR
+1
+La entidad implementa un comité de gestión de riesgos (para obras cuya cuantía supere los S/ 50,000,000), quien supervisa y revisa el proceso de gestión de riesgos, bajo los principios y enfoque de la Ley 32069.
+▼
+🔍
+DÓNDE VERIFICAR
+• PLADICOP: 🔗 pladicop.oece.gob.pe → expediente de contratación o Bases → buscar resolución de conformación del comité de gestión de riesgos.
+• Portal de transparencia de la entidad: resoluciones internas → buscar resolución de designación del comité.
+• SAIP de la entidad: solicitar actas de sesión del comité de gestión de riesgos.
+💡
+POR QUÉ VERIFICAR
+El comité de gestión de riesgos es el mecanismo que garantiza seguimiento activo de la contratación. Su ausencia en obras mayores a S/ 50M es un incumplimiento normativo que expone la obra a riesgos no monitoreados que se pueden materializan en incumplimiento del contrato, paralizaciones injustificadas, sobrecostos, entre otros.
+📋
+BASE NORMATIVA
+Art. 156.3° Reglamento D.S. N° 009-2025-EF (comité de gestión de riesgos para obras cuya cuantía supere los S/ 50,000,000). 
+Art. 156.2° Reglamento (asignación de riesgos a la parte que pueda gestionarlos).
+2
+La interacción con el mercado prioriza la detección temprana de errores u omisiones en el expediente técnico, a fin de realizar las modificaciones al expediente técnico que sean necesarias como resultado de dicha interacción.
+▼
+🔍
+DÓNDE VERIFICAR
+• PLADICOP: 🔗 pladicop.oece.gob.pe → expediente de contratación → 'Formato de Interacción con el mercado' → descargar formato o consultar informe de resultados y modificaciones al ETO realizadas.
+• SAIP de la entidad: solicitar el informe de resultados de la consulta al mercado y el acta de modificaciones al ETO.
+💡
+POR QUÉ VERIFICAR
+La interacción con el mercado es el principal mecanismo que permite detectar errores u omisiones del ETO antes de la convocatoria con participación de los propios postores. Si no genera ajustes al ETO, es señal de que sería un trámite formal sin efecto real sobre la calidad del ETO.
+📋
+BASE NORMATIVA
+Art. 153.4 Reglamento (prioriza la detección oportuna de errores u omisiones en el ETO)).
+PROCEDIMIENTO DE SELECCIÓN
+ 
+3 estándares
+4
+PROCEDIMIENTO DE SELECCIÓN
+Convocatoria oportuna, completa y conforme a bases estándar
+5 criterios
+⚠ Riesgo
+▼
+✔ ESTÁNDAR
+La convocatoria del procedimiento de selección se publica en el SEACE de la PLADICOP, de acuerdo a las bases estándar y a las condiciones normativas aplicables a la ejecución de obras. 
+⚠️
+CONVOCATORIA PREMATURA O IRREGULAR
+Convocar un proceso sin contar con el ETO actualizado y aprobado,o con bases que no se ajustan a las bases estándar vigentes genera procesos viciados de nulidad potencial, limita la competencia efectiva y expone a la entidad a impugnaciones o cuestionamientos que retrasan la ejecución de la obra.
+ 
+Si no se reduce este riesgo:
+• Nulidad del proceso por incumplimiento de condiciones previas obligatorias.
+• Convocatorias diseñadas para favorecer a un postor con información privilegiada.
+• Bases que omiten el Pacto de Integridad o la DJI del postor, reduciendo los mecanismos de control social.
+✔ CRITERIOS DE CUMPLIMIENTO · HAZ CLIC EN CADA CRITERIO PARA VER DÓNDE Y POR QUÉ VERIFICAR
+1
+El comité de selección, previa a la convocatoria, cuenta con el expediente técnico de obra actualizado y aprobado y verifica que se cuenta con la libre disponibilidad del terreno.
+▼
+🔍
+DÓNDE VERIFICAR
+• PLADICOP: 🔗 pladicop.oece.gob.pe → procedimiento → verificar fecha de publicación del ETO y resolución de aprobación vs. fecha de convocatoria.
+• SUNARP: 🔗 sunarp.gob.pe → 'Consulta de partida registral' → verificar que el predio está a nombre de la entidad sin cargas.
+• Portal de transparencia de la entidad: buscar resolución de aprobación del ETO con fecha anterior a la convocatoria.
+💡
+POR QUÉ VERIFICAR
+Convocar sin ETO actualizado o sin terreno disponible es uno de los factores de riesgo más frecuentes de paralización de obras. Si el proceso se convoca sobre bases incompletas, se genera una causal que podria generar adendas o ampliaciones de plazo durante la ejecución del contrato.
+📋
+BASE NORMATIVA
+Art. 163.1.  Reglamento D.S. N° 009-2025-EF (convocatoria del procedimiento de selección)
+2
+Las bases de la contratación se elaboran conforme a la estructura establecida en las bases estándar vigentes aprobadas por el OECE y aplicable al tipo de procedimiento de selección y cuantía.
+▼
+🔍
+DÓNDE VERIFICAR
+• OECE – Bases estándar vigentes: 🔗 oece.gob.pe → 'Instrumentos normativos' → 'Bases estándar' → descargar la versión vigente para el tipo de procedimiento y cuantía.
+• PLADICOP: 🔗 pladicop.oece.gob.pe → procedimiento → 'Bases' → comparar estructura con las bases estándar vigentes del OECE.
+💡
+POR QUÉ VERIFICAR
+Las bases que no siguen la estructura de las bases estándar del OECE pueden incluir cláusulas que restringen artificialmente la competencia, exigen requisitos no autorizados o eliminan mecanismos de control obligatorios.
+📋
+BASE NORMATIVA
+Art. 55.3° Ley N° 32069 (bases del procedimiento de selección).
+3
+La entidad establece y aplica el incentivo por culminación anticipada de obra de manera obligatoria.
+▼
+🔍
+DÓNDE VERIFICAR
+• PLADICOP: 🔗 pladicop.oece.gob.pe → procedimiento → 'Bases' → verificar que las bases incluyen la cláusula del incentivo con el monto del gasto general variable diario y la fórmula de cálculo explícita.
+• SAIP de la entidad: solicitar las bases integradas y el contrato para verificar que la cláusula fue incorporada.
+💡
+POR QUÉ VERIFICAR
+La ausencia del incentivo por culminación anticipada en las bases de contratos de solo construcción es un incumplimiento normativo expreso. Su omisión elimina el principal mecanismo de alineación de incentivos entre la entidad y el contratista para la entrega oportuna de la obra.
+📋
+BASE NORMATIVA
+Art. 162° lit. a) Reglamento D.S. N° 009-2025-EF (incentivo por culminación anticipada: OBLIGATORIO en contratos de solo construcción desde la etapa de bases).
+4
+La entidad publica el ETO completo y la resolución que lo aprueba en la PLADICOP en formatos que permitan ser descargados y sin restricciones de acceso.
+▼
+🔍
+DÓNDE VERIFICAR
+• PLADICOP: 🔗 pladicop.oece.gob.pe → procedimiento → 'Documentos del procedimiento' → verificar que el ETO completo (todos sus componentes) es descargable sin restricciones desde la fecha de convocatoria.
+• Comparar el ETO publicado en PLADICOP con los componentes mínimos del Art. 170° del Reglamento.
+💡
+POR QUÉ VERIFICAR
+La publicación incompleta del ETO es una práctica que limita la competencia: solo los postores con acceso privilegiado a la información técnica completa pueden formular ofertas competitivas.
+📋
+BASE NORMATIVA
+Art. 163 Reglamento Reglamento D.S. N° 009-2025-EF (componentes mínimos del ETO).  
+Art. 5, literal g)  de la Ley 32069. Principio de publicidad.
+5
+Las bases establecen como requisito de admisibilidad de la oferta la presentación del Pacto de Integridad aprobado en las bases estándar y la declaración jurada de responsabilidad por la veracidad de documentos y de no encontrarse impedido para contratar con el Estado.
+▼
+🔍
+DÓNDE VERIFICAR
+• PLADICOP: 🔗 pladicop.oece.gob.pe → procedimiento → 'Bases' → verificar que incluyen los formatos del Pacto de Integridad y la DJJ de no impedimento como requisitos de admisibilidad.
+• OECE – Bases estándar: verificar que los formatos corresponden a la versión vigente aprobada por el OECE.
+💡
+POR QUÉ VERIFICAR
+El Pacto de Integridad y la DJJ de no incurrir en causales de impedimento son los compromisos que concretizan los principios integridad, transparencia y rendición de cuentas, por ello su relevancia de que su presentación se verifique antes de la firma del contrato, por lo que su omisión debe ser objeto de descalificación. 
+📋
+BASE NORMATIVA
+Art. 29.8 Ley N° 32069 (firma de pacto de integridad del postor).
+Art. 69.b Reglamento D.S. N° 009-2025-EF (pacto de integridad).
+5
+PROCEDIMIENTO DE SELECCIÓN
+Competencia efectiva y pluralidad de propuestas válidas
+2 criterios
+⚠ Riesgo
+▼
+✔ ESTÁNDAR
+La entidad diseña las reglas del procedimiento de selección con factores de evaluación y requisitos de calificación proporcionales, razonables y congruentes con el objeto, que no restringen artificialmente la competencia, y que resultan en la presentación de al menos dos propuestas válidas de postores con capacidad real para ejecutar la obra. 
+⚠️
+COLUSIÓN Y RESTRICCIÓN ARTIFICIAL DE LA COMPETENCIA
+Bases con requisitos diseñados para excluir competidores o favorecer a un postor específico generan adjudicaciones sin competencia real, donde el precio pagado no refleja el valor de mercado y la calidad ofrecida no es la óptima para el Estado.
+ 
+Si no se reduce este riesgo:
+• Adjudicaciones a precios superiores al valor de mercado por ausencia de competencia.
+• Postores coludidos que simulan competencia con ofertas coordinadas.
+• Exclusión de pequeñas y medianas empresas por requisitos desproporcionados.
+• Concentración de contratos en un mismo proveedor sin justificación técnica.
+✔ CRITERIOS DE CUMPLIMIENTO · HAZ CLIC EN CADA CRITERIO PARA VER DÓNDE Y POR QUÉ VERIFICAR
+1
+Los requisitos de calificación (experiencia, capacidad técnica y financiera) son proporcionales a la complejidad y valor de la obra, sin exigencias que solo un postor del mercado puede cumplir, verificable mediante comparación con obras similares en el SEACE-PLADICOP
+▼
+🔍
+DÓNDE VERIFICAR
+• PLADICOP: 🔗 pladicop.oece.gob.pe → procedimiento → 'Bases' → sección 'Requisitos de calificación' → comparar con requisitos de obras similares.
+• Contrataciones Abiertas OECE: 🔗 contratacionesabiertas.oece.gob.pe → filtrar por tipología, región y rango de monto → comparar requisitos de experiencia y capacidad financiera.
+💡
+POR QUÉ VERIFICAR
+Los requisitos de calificación excesivos son el mecanismo más frecuente de restricción artificial de la competencia. Un requisito de experiencia que solo un postor del mercado puede cumplir predetermina la adjudicación antes de que el proceso inicie formalmente.
+📋
+BASE NORMATIVA
+Art. 5° lit. h), i) y j) Ley N° 32069 (principio de libre concurrencia, transparencia y competencia).  
+Requisitos de calificación según las Bases Estándar para el caso de obras).
+2
+El número de propuestas presentadas en el procedimiento de selección es mayor o igual a 3. Si se presentó solo 1 propuesta, el Comité de selección informa a la DEC sobre las posibles causas de la baja competencia y recomienda las medidas para otras convocatorias similares.
+▼
+🔍
+DÓNDE VERIFICAR
+• PLADICOP: 🔗 pladicop.oece.gob.pe → Acta de presentación y evaluación de propuestas → verificar número de postores que presentaron propuestas válidas.
+• Contrataciones Abiertas OECE: 🔗 contratacionesabiertas.oece.gob.pe → buscar el procedimiento → verificar número de participantes y propuestas.
+💡
+POR QUÉ VERIFICAR
+La presentación de menos de 3 propuestas válidas es un indicador de competencia insuficiente que puede reflejar requisitos restrictivos, valor referencial inadecuado o colusión entre postores. No garantiza por sí solo integridad, pero su ausencia recurrente en una entidad es una señal de alerta.
+📋
+BASE NORMATIVA
+Art. 5° lit. a) Ley N° 32069 (principio de competencia). 
+Art. 72 y 73  Reglamento D.S. N° 009-2025-EF (requisitos de calificación y evaluación de ofertas). 
+Art. 84° Reglamento (declaratoria de desierto cuando no hay propuestas válidas).
+6
+PROCEDIMIENTO DE SELECCIÓN
+Verificación de la idoneidad y documentación del postor ganador
+4 criterios
+⚠ Riesgo
+▼
+✔ ESTÁNDAR
+La entidad realiza la verificación de la propuesta del postor ganador a fin de asegurar que no incurre en una causal de impedimento, que los documentos son veraces y auténticos. 
+⚠️
+ADJUDICACIÓN A POSTOR IMPEDIDO O CON DOCUMENTACIÓN FALSA
+La falta de verificación sistemática de impedimentos y la ausencia de fiscalización posterior de documentos permiten que postores con vínculos con funcionarios de la entidad o con documentos falsos o inexactos obtengan contratos públicos, comprometiendo la ejecución de la obra y la integridad del proceso.
+ 
+Si no se reduce este riesgo:
+• Contratos suscritos con postores legalmente impedidos, expuestos a nulidad.
+• Contratistas sin capacidad técnica real que presentaron documentación falsa.
+• Impunidad del postor que falsificó documentos por ausencia de denuncia al TCP.
+✔ CRITERIOS DE CUMPLIMIENTO · HAZ CLIC EN CADA CRITERIO PARA VER DÓNDE Y POR QUÉ VERIFICAR
+1
+La DEC verifica los impedimentos de carácter personal (tipos 1.F y 1.G) y por parentesco (tipos 2.D y 2.E), mediante cruce de la FUP del postor con las DJI de todos los funcionarios y servidores que participaron en el proceso, lo cual debe estar documentado en el expediente de contratación antes de la suscripción del contrato.
+▼
+🔍
+DÓNDE VERIFICAR
+• RNP – FUP: 🔗 oece.gob.pe → RNP → 'Consulta de proveedores' → revisar conformación societaria, representantes y accionistas del postor.
+• Plataforma DJI-CGR: 🔗 appjuradointereses.contraloria.gob.pe → verificar DJI de funcionarios vinculados a la contratación.
+• SAIP de la entidad: solicitar el informe de verificación de impedimentos con fecha anterior a la firma del contrato.
+💡
+POR QUÉ VERIFICAR
+La verificación de impedimentos antes de suscribir el contrato es el único momento en que puede anularse la adjudicación sin consecuencias contractuales graves. Si el impedimento se detecta después de iniciada la ejecución, la nulidad del contrato genera paralización de obra, retraso, responsabilidades y perjuicio al Estado.
+📋
+BASE NORMATIVA
+Art. 30° Ley N° 32069 (impedimentos para contratar con el Estado: tipos 1.F, 1.G, 2.D y 2.E). 
+Art. 36° Reglamento D.S. N° 009-2025-EF (FUP y verificación de impedimentos). 
+Art. 35° Reglamento (fiscalización posterior).
+2
+La entidad inicia la fiscalización de los documentos presentados por el postor ganador, una vez consentida la buena pro.
+▼
+🔍
+DÓNDE VERIFICAR
+• SAIP de la entidad: solicitar el informe de fiscalización posterior o  fecha de inicio de la fiscalización.
+💡
+POR QUÉ VERIFICAR
+La fiscalización posterior sin plazo definido puede quedar pendiente indefinidamente, permitiendo que un postor con documentación falsa ejecute el contrato completo sin consecuencias.
+📋
+BASE NORMATIVA
+Art. 35 y 83  Reglamento D.S. N° 009-2025-EF (fiscalización posterior de documentos del postor ganador). 
+Art. 32° Ley N° 27444 (Ley del Procedimiento Administrativo General: fiscalización posterior obligatoria).
+3
+El OEC emite el informe de resultados de fiscalización posterior y concluye que no hay documentos falsos o inexactos en la propuesta del postor ganador.
+▼
+🔍
+DÓNDE VERIFICAR
+ 
+💡
+POR QUÉ VERIFICAR
+El informe de fiscalización que no concluye categóricamente sobre la veracidad de los documentos no tiene efecto sancionador. Un informe con conclusión ambigua o que no determina si hay o no documentación falsa o inexacta puede generar impunidad y perjuicios económicos a la entidad.
+4
+El OEC informa al Tribunal de Contrataciones del Estado los resultados de la fiscalización posterior, en caso advierta documentación falsa o inexacta, a fin de que inicie el procedimiento administrativo sancionador.
+▼
+🔍
+DÓNDE VERIFICAR
+• TCP – Resoluciones: 🔗 oece.gob.pe/tribunal → 'Resoluciones' → buscar por RUC del postor → verificar si se inició procedimiento sancionador o existe una resolución de sanción administrativa.
+ 
+• SAIP de la entidad: solicitar la comunicación enviada al TCP con fecha.
+💡
+POR QUÉ VERIFICAR
+La falta de comunicación al TCP cuando se detecta documentación falsa genera impunidad: el postor puede participar en otros procesos con la misma documentación falsa sin consecuencias. La comunicación oportuna al TCP activa el procedimiento sancionador que protege a otras entidades.
+EJECUCIÓN CONTRACTUAL
+ 
+6 estándares
+7
+EJECUCIÓN CONTRACTUAL
+Suscripción del contrato con cláusulas completas y publicación oportuna
+5 criterios
+⚠ Riesgo
+▼
+✔ ESTÁNDAR
+La entidad suscribe el contrato incluyendo todas las cláusulas obligatorias de la Ley N° 32069 —entre ellas la cláusula de gestión de riesgos—, verifica previamente las garantías, designa al coordinador del contrato antes del inicio del plazo de ejecución, y publica el contrato en el SEACE dentro de los 10 días hábiles siguientes a su suscripción. 
+⚠️
+CONTRATO INCOMPLETO O CON CLÁUSULAS QUE CONLLEVAN AL INCUMPLIMEINTO NORMATIVO
+Un contrato sin las cláusulas obligatorias de la Ley N° 32069, publicado fuera de plazo o sin designación del coordinador, reduce la capacidad de la entidad para gestionar la ejecución, aplicar penalidades y resolver controversias, generando incertidumbre sobre la adecuada gestión contractual.
+ 
+Si no se reduce este riesgo:
+• Contrato sin cláusula anticorrupción que impida invocar esta obligación frente al contratista.
+• Ausencia de garantías correctamente constituidas que protejan al Estado ante incumplimiento.
+• Inicio tardío de la ejecución por ausencia del coordinador designado.
+• Deficiencias u omisiones del ETO no detectadas antes del inicio de la ejecución.
+✔ CRITERIOS DE CUMPLIMIENTO · HAZ CLIC EN CADA CRITERIO PARA VER DÓNDE Y POR QUÉ VERIFICAR
+1
+La entidad, previo a la firma del contrato, designa a un coordinador, quien se encarga de gestionar el contrato, sin hacerse responsable de las opiniones técnicas de la supervisión de obra.
+▼
+🔍
+DÓNDE VERIFICAR
+• SEACE/PLADICOP: 🔗 pladicop.oece.gob.pe → contrato → buscar resolución de designación del coordinador publicada antes del inicio del plazo del contrato.
+• Portal de transparencia de la entidad: resoluciones internas → buscar resolución de designación del coordinador con perfil y funciones.
+• SAIP de la entidad: solicitar la resolución de designación del coordinador con CV adjunto.
+💡
+POR QUÉ VERIFICAR
+El coordinador es el responsable de gestionar el contrato desde la perspectiva de la entidad, incluyendo el seguimiento de plazos, la gestión de controversias y la coordinación con el supervisor. Su ausencia o designación tardía puede afectar el seguimiento o monitoreo orientado a generar aleras bajo un enfoque preventivo y colaborativo.
+📋
+BASE NORMATIVA
+Art. 169 Reglamento D.S. N° 009-2025-EF (Obligatoriedad de designar a un coordinador ).
+2
+La entidad suscribe el contrato de acuerdo con los requisitos previstos en las bases y lo publica en el SEACE de la PLADICOP máximo a los 10 días hábiles de suscrito.
+▼
+🔍
+DÓNDE VERIFICAR
+• SEACE/PLADICOP: 🔗 pladicop.oece.gob.pe → procedimiento → 'Contrato' → verificar fecha de publicación del contrato vs. fecha de suscripción.
+• SAIP de la entidad: solicitar el contrato completo con todos sus anexos si no está disponible en PLADICOP.
+💡
+POR QUÉ VERIFICAR
+La publicación del contrato dentro del plazo legal permite que la sociedad civil verifique las condiciones pactadas antes de que inicie la ejecución y mejora el seguimiento de la inversión, veeduría y rendición de cuentas.
+📋
+BASE NORMATIVA
+Art. 13.7 Directiva N° 007-2025-OECE-CD
+3
+La entidad establece y aplica el incentivo por culminación anticipada de obra de manera obligatoria.
+▼
+🔍
+DÓNDE VERIFICAR
+• SEACE/PLADICOP: 🔗 pladicop.oece.gob.pe → contrato → descargar contrato completo → verificar cláusula de incentivo con monto del gasto general variable diario y fórmula de cálculo.
+• SAIP de la entidad: solicitar el contrato con el anexo de incentivos si no está en PLADICOP.
+💡
+POR QUÉ VERIFICAR
+El incentivo debe estar en el contrato con la fórmula de cálculo explícita para ser exigible. Si el contrato dice que hay incentivo pero no define el monto del gasto general variable diario, el contratista no puede calcular su beneficio y el incentivo pierde su efecto motivador.
+📋
+BASE NORMATIVA
+Art. 162° lit. a) Reglamento D.S. N° 009-2025-EF (incentivo por culminación anticipada: OBLIGATORIO en contratos de solo construcción, con monto del gasto general variable diario y fórmula de cálculo explícita en el contrato).
+4
+El contrato incluye las siguientes cláusulas: a) Garantías (I) de fiel cumplimiento se mantiene vigente hasta el consentimiento de la liquidación final o ii) retención) b) Cláusula anticorrupción y antisoborno. c) Solución de controversias. d) Resolución de contrato por incumplimiento. e) Gestión de riesgos.
+▼
+🔍
+DÓNDE VERIFICAR
+• SEACE/PLADICOP: 🔗 pladicop.oece.gob.pe → contrato → descargar contrato → verificar cada cláusula obligatoria.
+• SBS – Verificación de garantías: 🔗 sbs.gob.pe → 'Consultas en línea' → verificar vigencia y autenticidad de cartas fianza.
+💡
+POR QUÉ VERIFICAR
+Un contrato sin cláusula anticorrupción no permite invocar esa obligación frente al contratista en caso de acto de corrupción comprobado. La ausencia de la cláusula JPRD impide conformar la Junta de Prevención y Resolución de Disputas, exponiendo a la entidad a arbitrajes más costosos y lentos. La ausencia de una matriz de gestión de riesgos conlleva a que no se cumpla la finalidad pública de la contratación.
+📋
+BASE NORMATIVA
+Art. 60 Ley 32069
+Art. 182° y 183° Reglamento (garantías)
+5
+La entidad verifica que el contratista presente informe técnico de revisión del ETO dentro de los 12 días siguientes a la suscripción del contrato, identificando deficiencias u omisiones, posibles prestaciones adicionales y riesgos advertidos de la revisión documental.
+▼
+🔍
+DÓNDE VERIFICAR
+• SEACE/PLADICOP – Cuaderno de incidencias: 🔗 pladicop.oece.gob.pe → contrato → 'Cuaderno de incidencias' → verificar si el contratista registró el informe técnico de revisión del ETO dentro de los 12 días de suscrito el contrato.
+• SAIP de la entidad: solicitar el informe técnico de revisión del ETO presentado por el contratista.
+💡
+POR QUÉ VERIFICAR
+El informe de revisión del ETO por el contratista en los primeros 12 días es la oportunidad para identificar deficiencias antes de que generen paralizaciones o adicionales costosos. Si el contratista no lo presenta y la entidad no lo exige, ambos renuncian al único mecanismo de detección temprana de problemas del ETO.
+📋
+BASE NORMATIVA
+Art. 171.1 Reglamento D.S. N° 009-2025-EF (evisión del expediente técnico en el sistema de entrega de solo construcción para la detección temprana de deficiencias u omisiones)
+8
+EJECUCIÓN CONTRACTUAL
+Supervisión permanente, técnica e independiente de la obra
+5 criterios
+⚠ Riesgo
+▼
+✔ ESTÁNDAR
+La entidad garantiza que la supervisión de la obra registra en el cuaderno de obra los hechos relevantes de la ejecución, realiza ensayos y pruebas de calidad conforme al ETO, emite informes mensuales con avance físico-financiero y alerta temprana de riesgos, e identifica oportunamente las causas de posibles adicionales antes de que se produzcan. 
+⚠️
+SUPERVISIÓN DEFICIENTE O CAPTURADA
+Una supervisión ausente, complaciente o que no registra en el cuaderno de incidencias los hechos relevantes de la obra permite que el contratista ejecute trabajos de mala calidad, incumpla especificaciones técnicas o acumule retrasos sin consecuencias, generando una obra que no cumple su finalidad pública.
+ 
+Si no se reduce este riesgo:
+• Obras recibidas con vicios ocultos por supervisión que no verificó las especificaciones técnicas.
+• Adicionales aprobados sin sustento técnico real por supervisión que no identificó su origen.
+• Retrasos que generan mayores gastos de supervisión asumidos indebidamente por el Estado.
+• Sustitución irregular del plantel técnico sin aplicación de penalidades.
+✔ CRITERIOS DE CUMPLIMIENTO · HAZ CLIC EN CADA CRITERIO PARA VER DÓNDE Y POR QUÉ VERIFICAR
+1
+La obra cuenta con un supervisor de la ejecución de la obra desde el inicio del plazo del contrato hasta la recepción de la obra, para lo cual se designa a un jefe de supervisión, quien no puede prestar servicios en más de una obra a la vez.
+▼
+🔍
+DÓNDE VERIFICAR
+• SEACE/PLADICOP: 🔗 pladicop.oece.gob.pe → contrato de supervisión → verificar que el jefe designado coincide con el propuesto en la oferta.
+• CIP – Habilitación: 🔗 cip.org.pe → 'Verificación de habilitación' → ingresar número de colegiatura del jefe de supervisión.
+• CAP – Habilitación: 🔗 cap.org.pe → equivalente para arquitectos.
+💡
+POR QUÉ VERIFICAR
+Un supervisor verifica la ejecución del ETO de acuerdo a las condiciones establecidas en éste, por lo que es clave que este desde el principio hasta la culminación.  La prestación simultánea en más de una obra genera ausencias en la obra que impiden la verificación efectiva de la calidad.
+📋
+BASE NORMATIVA
+Art. 186° Reglamento D.S. N° 009-2025-EF  
+Art. 187° Reglamento (funciones del supervisor).
+2
+El supervisor mantiene actualizado el cuaderno de incidencias, que forma parte de la Pladicop, como medio digital a través del cual se registran, a través de anotaciones, los principales hechos que ocurren durante la ejecución de la obra, las aprobaciones de trabajos o partidas a realizarse, las consultas y sus respuestas, entre otros, las cuales se usarán como sustento para las modificaciones contractuales, según corresponda.
+▼
+🔍
+DÓNDE VERIFICAR
+• SEACE/PLADICOP – Cuaderno de incidencias: 🔗 pladicop.oece.gob.pe → contrato → 'Cuaderno de incidencias' → revisar frecuencia, contenido y calidad técnica de las anotaciones del supervisor.
+• Contar anotaciones por semana e identificar períodos sin anotaciones superiores a 7 días hábiles.
+💡
+POR QUÉ VERIFICAR
+El cuaderno de incidencias digital es la evidencia documental de la presencia y actuación del supervisor en la obra. La ausencia de anotaciones regulares indica que el supervisor no está en la obra o no está ejerciendo sus funciones, lo que impide detectar y corregir oportunamente problemas de calidad o de avance.
+📋
+BASE NORMATIVA
+Art. 188° Reglamento D.S. N° 009-2025-EF (cuaderno de incidencias: obligatorio, digital, parte de PLADICOP, con anotaciones de hechos relevantes, consultas y respuestas).
+3
+Cuando la valorización acumulada ejecutada es menor al 80% de la valorización acumulada programada, el supervisor ordena la presentación de un nuevo programa de ejecución acelerado dentro del plazo reglamentario y lo registra en el cuaderno de incidencias.
+▼
+🔍
+DÓNDE VERIFICAR
+• SEACE/PLADICOP – Cuaderno de incidencias: 🔗 pladicop.oece.gob.pe → verificar si existe anotación del supervisor ordenando el programa de ejecución acelerado cuando el avance fue menor al 80% del programado.
+• SSI: 🔗 ssi.gob.pe → buscar por código SNPMGI → comparar avance físico real vs. programado por período.
+• SIAF-MEF: 🔗 apps.mef.gob.pe/siaf → comparar valorizaciones pagadas vs. calendario valorizado del contrato.
+💡
+POR QUÉ VERIFICAR
+Si el supervisor no activa el mecanismo del programa acelerado cuando el avance cae por debajo del 80%, la entidad pierde el derecho a aplicar penalidades por mora de manera documentada. La ausencia de este registro en el cuaderno de incidencias es una señal de supervisión complaciente con el retraso del contratista.
+📋
+BASE NORMATIVA
+Art. 207° Reglamento D.S. N° 009-2025-EF (penalidad por mora: valorización acumulada ejecutada < 80% de la programada activa la obligación del supervisor de ordenar un programa de ejecución acelerado).
+4
+La entidad se pronuncia oportunamente sobre la sustitución de integrante del plantel técnico en obra y aplica la penalidad respectiva, salvo que la sustitución se origine por caso fortuito o fuerza mayor o por un hecho sobreviniente no imputable al contratista.
+▼
+🔍
+DÓNDE VERIFICAR
+• SEACE/PLADICOP: 🔗 pladicop.oece.gob.pe → cuaderno de incidencias → verificar anotaciones sobre sustitución del plantel técnico y la respuesta de la entidad dentro del plazo.
+💡
+POR QUÉ VERIFICAR
+La no aplicación de penalidades por sustitución del plantel técnico genera un incentivo perverso: el contratista puede presentar personal calificado en la oferta y reemplazarlo por personal de menor costo y calidad durante la ejecución sin consecuencias económicas, reduciendo la calidad de la obra sin afectar su margen.
+📋
+BASE NORMATIVA
+Art. 189.3° Reglamento D.S. N° 009-2025-EF (sustitución de integrantes del plantel técnico: procedimiento y penalidades).
+5
+La inversión pública cuenta con información actualizada en el Sistema de Seguimiento de Inversiones (SSI) sobre el avance físico y financiero de la ejecución.
+▼
+🔍
+DÓNDE VERIFICAR
+• SSI – Sistema de Seguimiento de Inversiones: 🔗 ssi.gob.pe → buscar por código SNPMGI, código SIAF o nombre de la obra → verificar avance físico y financiero con fecha de última actualización.
+• Comparar el avance registrado en el SSI con el calendario valorizado del contrato publicado en PLADICOP.
+💡
+POR QUÉ VERIFICAR
+El SSI desactualizado impide que la ciudadanía, el MEF y el OECE monitoreen el avance real de las obras. La falta de actualización puede encubrir paralizaciones, demoras o falta de capacidad de gestión oportuna, impidiendo la activación de los mecanismos de control y sanción.
+📋
+BASE NORMATIVA
+Artículo 45 de la Directiva N° 001-2019-EF/63.01 
+Artículo 5, literal i) de la Ley N° 32069 (Principio de Transparencia)
+9
+EJECUCIÓN CONTRACTUAL
+Aprobación técnicamente sustentada de adicionales y ampliaciones de plazo
+1 criterio
+⚠ Riesgo
+▼
+✔ ESTÁNDAR
+La entidad aprueba adicionales de obra y ampliaciones de plazo únicamente cuando están sustentados técnicamente, son aprobados dentro del plazo normativo, no superan los límites legales sin la autorización del nivel competente, y su origen no es imputable a deficiencias del ETO; garantizando que ningún adicional se aprueba en regularización ni fue ejecutado sin autorización previa. 
+⚠️
+ADICIONALES IRREGULARES O PREDISEÑADOS
+La aprobación de adicionales sin sustento técnico suficiente, en vía de regularización o por encima de los límites legales es el mecanismo más frecuente de sobrecosto en obras públicas. Permite transferir recursos adicionales al contratista sin competencia y puede encubrir deficiencias del ETO que eran imputables al consultor o a la propia entidad.
+ 
+Si no se reduce este riesgo:
+• Adicionales aprobados en regularización que encubren acuerdos informales previos a su ejecución.
+• Sobrecostos que superan los límites legales sin la autorización del nivel competente (CGR).
+• Adicionales cuya causa real son deficiencias del ETO imputables al consultor, asumidas indebidamente por el Estado.
+• Expedientes técnicos de adicionales elaborados por el propio contratista sin control independiente.
+✔ CRITERIOS DE CUMPLIMIENTO · HAZ CLIC EN CADA CRITERIO PARA VER DÓNDE Y POR QUÉ VERIFICAR
+1
+La entidad dispone la ejecución de prestaciones adicionales siempre que resulte indispensable debido a: i) deficiencias en el expediente técnico o ii) por causas no previsibles en el expediente técnico de obra o no previsibles posterior al perfeccionamiento del contrato y que no son responsabilidad del contratista; dichos adicionales no pueden superar el (50%) del monto del contrato original, estando prohibida la aprobación de prestaciones adicionales en vía de regularización
+▼
+🔍
+DÓNDE VERIFICAR
+• SSI:  Consultar información sobre estado de la inversión y verificar si ha habido una resolución de adicional tiene fecha anterior al inicio de ejecución del adicional. Dicha información también de puede verificar en el cuaderno de incidencias.
+• CGR – Informes de control: 🔗 busqueda.cgr.gob.pe → buscar por nombre de la obra → verificar si la CGR identificó adicionales irregulares.
+• SAIP de la entidad: solicitar los expedientes técnicos de cada adicional con la opinión técnica del órgano especializado.
+💡
+POR QUÉ VERIFICAR
+Los adicionales en vía de regularización son la prueba más directa de corrupción en la ejecución de obras: significan que el contratista ejecutó trabajos adicionales sin autorización previa, lo que solo es posible si existe un acuerdo informal previo con funcionarios de la entidad. La prohibición del Art. 194.3° es expresa y su incumplimiento genera responsabilidad administrativa y penal.
+📋
+BASE NORMATIVA
+Art. 194.1 y 194.5. Reglamento D.S. N° 009-2025-EF (prestaciones adicionales de obra: procedimiento, límites y prohibición de regularización).
+10
+EJECUCIÓN CONTRACTUAL
+Valorizaciones y pagos oportunos, verificados y correctamente calculados
+3 criterios
+⚠ Riesgo
+▼
+✔ ESTÁNDAR
+La entidad aprueba las valorizaciones dentro del plazo normativo, con verificación técnica de la supervisión sobre los metrados ejecutados y efectúa los pagos únicamente contra valorización aprobada; previniendo tanto la retención indebida de pagos, el pago por trabajos no ejecutados o la suspensión por falta de pago de dos valorizaciones consecuetivas. 
+⚠️
+RETENCIÓN INDEBIDA DE PAGOS O PAGOS SIN SUSTENTO
+El retraso injustificado en el pago de valorizaciones genera presiones sobre el contratista que pueden derivar en acuerdos informales para agilizar los pagos, en tanto que el pago sin verificación técnica permite que el contratista cobre por trabajos no ejecutados o mal ejecutados.
+ 
+Si no se reduce este riesgo:
+• Suspensión de la ejecución de la obra por falta de pago, con reconocimiento forzado de costos adicionales.
+• Acuerdos informales entre el contratista y funcionarios para agilizar el pago a cambio de beneficios indebidos.
+• Pagos por trabajos no ejecutados por ausencia de verificación técnica independiente.
+• Pérdida del derecho a reajustes por omisión en el cálculo de fórmulas polinómicas.
+✔ CRITERIOS DE CUMPLIMIENTO · HAZ CLIC EN CADA CRITERIO PARA VER DÓNDE Y POR QUÉ VERIFICAR
+1
+La entidad contratante evalúa y paga la valorización hasta el último día del mes en que es presentada, salvo hubieran observaciones.
+▼
+🔍
+DÓNDE VERIFICAR
+• SIAF-MEF: 🔗 apps.mef.gob.pe/siaf → consulta de ejecución de gasto → buscar por entidad y contrato → verificar fecha y monto de cada pago de valorización.
+• SEACE/PLADICOP: 🔗 pladicop.oece.gob.pe → contrato → 'Valorizaciones' → verificar fechas de presentación, aprobación y pago.
+• Comparar fechas de presentación de cada valorización con la fecha de pago en el SIAF.
+💡
+POR QUÉ VERIFICAR
+El retraso en el pago de valorizaciones genera presiones económicas sobre el contratista que frecuentemente derivan en acuerdos informales para agilizar los pagos a cambio de beneficios indebidos a funcionarios.
+📋
+BASE NORMATIVA
+Art. 210  Reglamento D.S. N° 009-2025-EF
+2
+La entidad no acumula deuda de 2 o más valorizaciones consecutivas sin pago a favor del contratista.
+▼
+🔍
+DÓNDE VERIFICAR
+• SEACE/PLADICOP – Cuaderno de incidencias: 🔗 pladicop.oece.gob.pe → 'Cuaderno de incidencias' → verificar si existe anotación de suspensión por falta de pago de 2 valorizaciones consecutivas.
+• SIAF-MEF: 🔗 apps.mef.gob.pe/siaf → verificar si hay deuda de 2 o más valorizaciones sin pago.
+• SAIP de la entidad: solicitar las valorizaciones aprobadas y los comprobantes de pago.
+💡
+POR QUÉ VERIFICAR
+La suspensión de obra por falta de pago es uno de los mecanismos de paralización más frecuentes y genera reconocimiento de costos adicionales para el Estado. Si la entidad no paga oportunamente y el contratista no anota formalmente la suspensión, la situación puede usarse como pretexto para solicitar adicionales informales.
+📋
+BASE NORMATIVA
+Art. 202.3° Reglamento D.S. N° 009-2025-EF (falta de pago de 2 valorizaciones consecutivas: derecho del contratista a anotar suspensión en el cuaderno de incidencias y reconocimiento de costos directos y gastos generales por el período de suspensión).
+3
+La entidad verifica que en la última valorización, el contratista entrega los planos post construcción, de lo contrario la entidad suspende su pago.
+▼
+🔍
+DÓNDE VERIFICAR
+• SEACE/PLADICOP: 🔗 pladicop.oece.gob.pe → contrato → 'Valorizaciones' → última valorización → verificar que incluye constancia de entrega de planos post-construcción.
+• SAIP de la entidad: solicitar los planos post-construcción y el acuse de recibo firmado.
+• SIAF-MEF: verificar que el pago de la última valorización se realizó después de la entrega de los planos.
+💡
+POR QUÉ VERIFICAR
+Los planos post-construcción reflejan la obra realmente ejecutada, que puede diferir del ETO original por las modificaciones aprobadas. Sin ellos, la entidad no puede operar ni mantener la infraestructura correctamente, y no puede verificar si lo que se pagó corresponde a lo que se construyó.
+📋
+BASE NORMATIVA
+Art. 210.10° Reglamento D.S. N° 009-2025-EF
+11
+EJECUCIÓN CONTRACTUAL
+Implementación oportuna de las medidas correctivas ante informes de la CGR
+2 criterios
+⚠ Riesgo
+▼
+✔ ESTÁNDAR
+La entidad implementa las medidas correctivas indicadas en los informes de la CGR dentro de los plazos establecidos, comunica formalmente a la Contraloría las acciones adoptadas y sus resultados, y adopta medidas preventivas para evitar que las mismas irregularidades se repitan en contratos posteriores. 
+⚠️
+NO IMPLEMENTAR LAS SITUACIONES ADVERSAS DE LA CGR DE MANERA OPORTUNA
+La no implementación oportuna de las recomendaciones de la CGR permite que las irregularidades identificadas se consoliden, se repitan en contratos posteriores y generen responsabilidades administrativas, civiles o penales para los funcionarios y perjuicio económico para el Estado.
+ 
+Si no se reduce este riesgo:
+• Irregularidades reiteradas que indican una gestión sistemáticamente deficiente o deliberadamente irregular.
+• Responsabilidades administrativas y penales para funcionarios que ignoraron los informes de control.
+• Pérdida de fondos públicos no recuperados por falta de acción oportuna.
+• Pérdida de confianza ciudadana en la gestión de la inversión pública.
+Las entidades no adoptan acciones para superar las situaciones adversas identificadas por la CGR ni comunican las medidas implementadas, lo cual puede originar la determinación de responsabilidad administrativa, civil o penal en los funcionarios vinculados.
+✔ CRITERIOS DE CUMPLIMIENTO · HAZ CLIC EN CADA CRITERIO PARA VER DÓNDE Y POR QUÉ VERIFICAR
+1
+La entidad notifica a la CGR la implementación de las medidas preventivas y correctivas dentro de los 3 meses de recibido el informe de control, registrando el estado de implementación en el sistema de seguimiento de la CGR.
+▼
+🔍
+DÓNDE VERIFICAR
+• CGR – Informes de control: 🔗 busqueda.cgr.gob.pe → descargar el informe de control → verificar las situaciones adversas identificadas y la fecha de notificación del informe a la entidad.
+💡
+POR QUÉ VERIFICAR
+La notificación tardía a la CGR sobre la implementación de medidas correctivas impide el seguimiento oportuno y puede indicar que las medidas no fueron implementadas realmente. El plazo de 3 meses es el estándar para que las correcciones tengan efecto antes de que el perjuicio económico al Estado se consolide.
+📋
+BASE NORMATIVA
+Numeral 6.1.8.2 de la Directiva N° 013-2022-CG/NORM - Directiva de Servicio de Control Simultáneo.
+2
+El porcentaje de situaciones adversas corregidas, de acuerdo a la evaluación de seguimiento de la CGR, es mayor o igual al 75% dentro de los 6 meses de recibido el informe de control.
+▼
+🔍
+DÓNDE VERIFICAR
+• CGR – Informes de seguimiento: 🔗 busqueda.cgr.gob.pe → buscar informes de seguimiento sobre la misma obra o entidad. Verificar el porcentaje de situaciones adversas con estado 'implementada' vs. 'pendiente' en el período evaluado.
+💡
+POR QUÉ VERIFICAR
+Un porcentaje de corrección inferior al 75% indica que la entidad no está tomando en serio las observaciones de la CGR, lo que genera reincidencia en las mismas irregularidades y responsabilidad administrativa para los funcionarios. La sociedad civil puede usar este indicador para identificar entidades con gestión sistemáticamente deficiente.
+📋
+BASE NORMATIVA
+Numeral 6.1.8.2 de la Directiva N° 013-2022-CG/NORM - Directiva de Servicio de Control Simultáneo.
+12
+EJECUCIÓN CONTRACTUAL
+Recepción rigurosa de obra conforme al ETO y liquidación oportuna
+4 criterios
+⚠ Riesgo
+▼
+✔ ESTÁNDAR
+La entidad recibe la obra solo cuando la comisión de recepción verifica técnicamente que cumple las especificaciones del ETO y las modificaciones aprobadas, las observaciones identificadas son levantadas de manera efectiva, la liquidación se elabora y aprueba dentro del plazo normativo, y la garantía de fiel cumplimiento se devuelve únicamente después de aprobada la liquidación. 
+⚠️
+RECEPCIÓN DE OBRA DEFICIENTE O CON VICIOS OCULTOS
+Una recepción de obra realizada sin verificación técnica rigurosa, sin participación de veedores independientes o con observaciones levantadas de manera formal pero no real, permite que el Estado reciba y pague por una obra que no cumple las especificaciones técnicas ni sirve adecuadamente a su finalidad pública.
+ 
+Si no se reduce este riesgo:
+• Obras recibidas con defectos estructurales o funcionales que generan costos adicionales de reparación.
+• Liquidaciones que reconocen saldos a favor del contratista sin sustento en la obra ejecutada.
+• Garantías de fiel cumplimiento retenidas indebidamente o devueltas sin verificación del cumplimiento contractual.
+• Obras que no entran en operación por deficiencias no identificadas en la recepción.
+✔ CRITERIOS DE CUMPLIMIENTO · HAZ CLIC EN CADA CRITERIO PARA VER DÓNDE Y POR QUÉ VERIFICAR
+1
+Dentro de los 15 días desde remitido el certificado de conformidad técnica del supervisor, el comité de recepción verifica in situ el cumplimiento contractual y el correcto funcionamiento u operatividad de la edificación o infraestructura culminada y equipos, en caso corresponda.
+▼
+🔍
+DÓNDE VERIFICAR
+• SEACE/PLADICOP – Cuaderno de incidencias: verificar la anotación del contratista solicitando la recepción y la fecha del certificado del supervisor.
+* Verificar la fecha de verificación in situ vs. fecha del certificado de conformidad técnica
+💡
+POR QUÉ VERIFICAR
+La verificación in situ fuera del plazo de 15 días puede indicar que el comité no realizó la verificación con el rigor necesario o que la obra tenía problemas que retrasaron la confirmación de su cumplimiento. El incumplimiento del plazo sin justificación es un incumplimiento normativo que favorece al contratista.
+📋
+BASE NORMATIVA
+Art. 212.3° Reglamento D.S. N° 009-2025-EF
+2
+Culminada la verificación, el contratista, el supervisor y el comité de recepción suscriben el acta de recepción de obra si no existen observaciones. De existir observaciones, el comité emite el pliego de observaciones y no recibe la obra.
+▼
+🔍
+DÓNDE VERIFICAR
+* Acta de recepeción.
+• SAIP de la entidad: solicitar el acta de recepción completa con los documentos de sustento de la verificación in situ.
+💡
+POR QUÉ VERIFICAR
+Un acta de recepción firmada por todos los actores —incluyendo el supervisor— es la única evidencia que acredita que la obra fue verificada y cumple las especificaciones contractuales. La ausencia de firma del supervisor en el acta es una señal de que existen discrepancias técnicas no resueltas que fueron ignoradas para formalizar la recepción.
+📋
+BASE NORMATIVA
+Art. 212.4° Reglamento D.S. N° 009-2025-EF
+3
+El Colegio de Ingenieros, el Colegio de Arquitectos, el OCI de la entidad o un representante de la población beneficiaria participan en la verificación in situ, sin integrar el comité de recepcin. Su participación queda acreditada en el acta de recepción.
+▼
+🔍
+DÓNDE VERIFICAR
+• SAIP de la entidad: solicitar la comunicación enviada al CIP, CAP o a la población beneficiaria invitándolos a participar en la recepción de obra.
+💡
+POR QUÉ VERIFICAR
+La participación de la sociedad civil, organizados en colegios profesionales o usuarios finales de la inversión, en la recepción de obra es un mecanismo de control externo en esta etapa crítica. Su ausencia permite que el comité de recepción —integrado por funcionarios de la propia entidad— levante observaciones sin verificación real, generando complicidad institucional en la aceptación de obras deficientes.
+📋
+BASE NORMATIVA
+Art. 212.2° Reglamento D.S. N° 009-2025-EF
+4
+La entidad emite su pronunciamiento dentro de los 15 días siguientes de presentada la liquidación por parte del contratista, el pago final y la devolución de la garantía de fiel cumplimiento se realizan dentro del plazo legal una vez consentida la liquidación.
+▼
+🔍
+DÓNDE VERIFICAR
+• Verificar en el cuaderno de incidencias si la liquidación fue presentada dentro del plazo y si la entidad se pronuncio dentro de los 15 dias de presenatda.  
+* Verificar en el SSI o via SAIP que el pago final fue realizado después del consentimiento de la liquidación, así como la devolución de la garantía.
+💡
+POR QUÉ VERIFICAR
+La liquidación tardía o no resuelta es un mecanismo de presión sobre el contratista: mientras no hay liquidación consentida, el contratista no recibe el pago final ni recupera su garantía. Esta situación genera presiones para llegar a acuerdos informales desventajosos. La retención de la garantía más allá del consentimiento de la liquidación sin controversia activa es un acto ilegal.
+📋
+BASE NORMATIVA
+Art. 215° Reglamento D.S. N° 009-2025-EF (liquidación del contrato de obra)
+OBRAS QUE FUNCIONAN · Guía de 12 Estándares de Integridad en la Contratación de Obras Públicas
+Nota: Esta Guía es una versión actualizada y adaptada del documento 'Estándares de Integridad en la Contratación de la Obra Pública' publicado originalmente por el Proyecto TPI de USAID el año 2022. La presente edición incorpora los cambios normativos de la Ley N° 32069 y reestructura los estándares para su aplicación técnica actual.
+Elaborado por el Centro de Buen Gobierno e Integridad SCRL 
