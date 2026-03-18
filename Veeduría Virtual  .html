@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veeduría Virtual · Obras que Funcionan con Integridad</title>
+<style>
+:root{
+  --navy:#1A3A5C;--navydark:#0F2440;--teal:#0F766E;--teallt:#CCFBF1;
+  --blue:#2563EB;--bluelt:#DBEAFE;--amber:#C05C04;--amberlt:#FEF3C7;
+  --red:#DC2626;--redlt:#FEE2E2;--gold:#F59E0B;
+  --green:#16A34A;--greenlt:#DCFCE7;
+  --white:#FFFFFF;--offwhite:#F8FAFC;--gray:#64748B;--lgray:#E2E8F0;--dark:#1E293B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--offwhite);color:var(--dark);font-size:15px;line-height:1.6}
+
+/* HEADER */
+header{background:var(--navydark);padding:0;box-shadow:0 2px 16px rgba(0,0,0,.3);position:sticky;top:0;z-index:200}
+.hdr-gold{height:5px;background:var(--gold)}
+.hdr-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 24px;flex-wrap:wrap;gap:10px}
+.hdr-back{color:#94A3B8;font-size:13px;text-decoration:none;display:flex;align-items:center;gap:6px;transition:color .2s}
+.hdr-back:hover{color:var(--gold)}
+.hdr-title{font-size:16px;font-weight:800;color:#fff}
+.hdr-tag{background:var(--gold);color:var(--navy);font-size:10px;font-weight:800;letter-spacing:1px;padding:4px 10px;border-radius:4px;text-transform:uppercase}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,var(--navydark) 0%,#1e4976 50%,#0F766E 100%);padding:40px 24px;text-align:center}
+.hero h1{font-size:32px;font-weight:900;color:#fff;margin-bottom:10px}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero p{font-size:15px;color:#94A3B8;max-width:600px;margin:0 auto 28px}
+
+/* CUI INPUT */
+.cui-box{background:rgba(255,255,255,.08);border:2px solid rgba(255,255,255,.15);border-radius:16px;padding:28px 24px;max-width:580px;margin:0 auto}
+.cui-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#94A3B8;margin-bottom:10px;display:block}
+.cui-row{display:flex;gap:10px}
+.cui-input{flex:1;padding:14px 18px;border-radius:10px;border:2px solid #334155;background:#0F172A;color:#fff;font-size:18px;font-weight:700;outline:none;letter-spacing:2px;transition:border-color .2s;font-family:inherit}
+.cui-input:focus{border-color:var(--gold)}
+.cui-input::placeholder{color:#4B5563;font-weight:400;font-size:14px;letter-spacing:0}
+.cui-btn{padding:14px 24px;background:var(--gold);color:var(--navy);border:none;border-radius:10px;font-size:15px;font-weight:800;cursor:pointer;transition:all .2s;white-space:nowrap;font-family:inherit}
+.cui-btn:hover{background:#E08E09;transform:translateY(-1px)}
+.cui-hint{font-size:12px;color:#64748B;margin-top:10px;text-align:left}
+
+/* LINKS PANEL */
+.links-panel{background:#fff;border-radius:14px;margin:24px auto;max-width:900px;box-shadow:0 2px 12px rgba(0,0,0,.08);overflow:hidden;display:none}
+.links-header{background:var(--navy);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.links-header h3{color:#fff;font-size:15px;font-weight:700}
+.cui-badge{background:var(--gold);color:var(--navy);font-weight:800;font-size:13px;padding:4px 12px;border-radius:20px}
+.links-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0}
+.link-item{padding:14px 18px;border-right:1px solid var(--lgray);border-bottom:1px solid var(--lgray);display:flex;align-items:center;gap:10px;text-decoration:none;transition:background .15s;color:var(--dark)}
+.link-item:hover{background:var(--offwhite)}
+.link-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.link-name{font-size:13px;font-weight:700;color:var(--dark)}
+.link-desc{font-size:11px;color:var(--gray);margin-top:1px}
+
+/* CHECKLIST */
+.checklist-wrap{max-width:900px;margin:0 auto 32px;display:none}
+.phase-title{display:flex;align-items:center;gap:12px;margin:24px 0 12px;padding:0 4px}
+.phase-badge{padding:6px 16px;border-radius:6px;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:#fff}
+.phase-line{flex:1;height:1px;background:var(--lgray)}
+
+.std-card{background:#fff;border-radius:12px;margin-bottom:10px;border:1px solid var(--lgray);overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05)}
+.std-header{display:flex;align-items:center;gap:0;cursor:pointer;user-select:none}
+.std-num{width:52px;height:52px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900;color:#fff;flex-shrink:0}
+.std-info{flex:1;padding:10px 14px}
+.std-name{font-size:14px;font-weight:700;color:var(--dark)}
+.std-risk{font-size:11px;color:var(--gray);margin-top:2px}
+.std-semaforo{padding:8px 14px;display:flex;gap:6px;align-items:center;flex-shrink:0}
+
+/* SEMAFORO BUTTONS */
+.sem-btn{width:36px;height:36px;border-radius:50%;border:2px solid transparent;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:all .2s;background:var(--lgray);position:relative}
+.sem-btn:hover{transform:scale(1.15)}
+.sem-btn.active-cumple{background:#16A34A;border-color:#166534;box-shadow:0 0 0 3px rgba(22,163,74,.3)}
+.sem-btn.active-no-cumple{background:var(--red);border-color:#991B1B;box-shadow:0 0 0 3px rgba(220,38,38,.3)}
+.sem-btn.active-no-verificado{background:var(--amber);border-color:#92400E;box-shadow:0 0 0 3px rgba(217,119,6,.3)}
+.sem-label{font-size:10px;color:var(--gray);text-align:center;margin-top:3px;white-space:nowrap}
+
+/* STANDARD DETAIL */
+.std-detail{display:none;border-top:1px solid var(--lgray);background:#FAFBFC;padding:16px 20px}
+.std-card.open .std-detail{display:block}
+.std-question{background:#fff;border:1px solid var(--lgray);border-radius:8px;padding:14px 16px;margin-bottom:10px}
+.std-question p{font-size:13px;color:var(--dark);margin-bottom:8px;font-weight:500}
+.q-options{display:flex;gap:8px;flex-wrap:wrap}
+.q-btn{padding:6px 14px;border-radius:20px;border:1.5px solid var(--lgray);background:#fff;font-size:12px;font-weight:600;cursor:pointer;transition:all .15s;font-family:inherit;color:var(--dark)}
+.q-btn:hover{border-color:var(--navy)}
+.q-btn.sel-cumple{background:var(--greenlt);border-color:var(--green);color:#166534}
+.q-btn.sel-no-cumple{background:var(--redlt);border-color:var(--red);color:#991B1B}
+.q-btn.sel-no-verificado{background:var(--amberlt);border-color:var(--amber);color:#78350F}
+.donde-link{display:inline-flex;align-items:center;gap:5px;background:var(--bluelt);color:var(--blue);border-radius:5px;padding:3px 10px;font-size:11px;font-weight:600;text-decoration:none;margin:2px;transition:background .15s}
+.donde-link:hover{background:#BFDBFE}
+.obs-input{width:100%;padding:8px 12px;border-radius:6px;border:1px solid var(--lgray);font-size:12px;font-family:inherit;margin-top:8px;resize:vertical;background:#fff;color:var(--dark);outline:none}
+.obs-input:focus{border-color:var(--navy)}
+
+/* RESUMEN */
+.resumen-bar{position:sticky;bottom:0;background:var(--navydark);border-top:3px solid var(--gold);padding:12px 24px;display:none;align-items:center;gap:16px;flex-wrap:wrap;z-index:100}
+.res-item{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:700}
+.res-dot{width:12px;height:12px;border-radius:50%}
+.res-btn{padding:10px 20px;border-radius:8px;border:none;cursor:pointer;font-size:13px;font-weight:800;font-family:inherit;transition:all .2s}
+.res-btn-pdf{background:var(--gold);color:var(--navy)}
+.res-btn-pdf:hover{background:#E08E09}
+.res-btn-reset{background:transparent;border:1.5px solid #334155;color:#94A3B8}
+.res-btn-reset:hover{border-color:var(--red);color:var(--red)}
+
+/* REPORT */
+.report-wrap{max-width:900px;margin:0 auto 40px;display:none}
+.report-card{background:#fff;border-radius:14px;border:1px solid var(--lgray);overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.report-header{background:var(--navydark);padding:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.report-scores{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--lgray)}
+.score-item{padding:20px;text-align:center;border-right:1px solid var(--lgray)}
+.score-item:last-child{border-right:none}
+.score-n{font-size:40px;font-weight:900;line-height:1}
+.score-label{font-size:12px;color:var(--gray);margin-top:4px;text-transform:uppercase;letter-spacing:.5px}
+.report-table{width:100%;border-collapse:collapse}
+.report-table th{background:var(--offwhite);padding:10px 16px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--gray);text-align:left;border-bottom:2px solid var(--lgray)}
+.report-table td{padding:10px 16px;font-size:13px;border-bottom:1px solid var(--lgray);vertical-align:top}
+.report-table tr:last-child td{border-bottom:none}
+.tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:700}
+.tag-cumple{background:var(--greenlt);color:#166534}
+.tag-no-cumple{background:var(--redlt);color:#991B1B}
+.tag-no-verificado{background:var(--amberlt);color:#78350F}
+.tag-pendiente{background:var(--lgray);color:var(--gray)}
+
+@media(max-width:600px){
+  .cui-row{flex-direction:column}
+  .std-semaforo{flex-wrap:wrap}
+  .report-scores{grid-template-columns:1fr}
+  .score-item{border-right:none;border-bottom:1px solid var(--lgray)}
+}
+@media print{
+  header,.cui-box,.resumen-bar,.res-btn-pdf,.res-btn-reset,.links-panel,.checklist-wrap{display:none!important}
+  .report-wrap{display:block!important}
+  body{font-size:12px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="hdr-gold"></div>
+  <div class="hdr-inner">
+    <a href="https://obrasquefuncionanconintegridad.netlify.app/" class="hdr-back">&#8592; Volver a la Guía</a>
+    <div class="hdr-title">OBRAS QUE FUNCIONAN CON INTEGRIDAD</div>
+    <div class="hdr-tag">&#128269; Veeduría Virtual</div>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>&#128269; Veeduría <em>Virtual</em></h1>
+  <p>Ingresa el CUI del proyecto de inversión y verifica su estado en base a los 12 Estándares de Integridad. Accede a las plataformas oficiales y registra tu evaluación.</p>
+
+  <div class="cui-box">
+    <label class="cui-label" for="cuiInput">&#128203; Ingresa el CUI del proyecto</label>
+    <div class="cui-row">
+      <input type="text" id="cuiInput" class="cui-input" placeholder="Ej: 2130949" maxlength="12" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+      <button class="cui-btn" onclick="iniciarVeeduria()">&#9654; Iniciar Veeduría</button>
+    </div>
+    <div class="cui-hint">&#128161; El CUI lo encuentras en el expediente de contratación o en el portal de inversiones del MEF (invierte.pe)</div>
+  </div>
+</div>
+
+<!-- LINKS DIRECTOS -->
+<div class="links-panel" id="linksPanel">
+  <div class="links-header">
+    <h3>&#128279; Plataformas oficiales precargadas con el CUI <span id="cuiBadge1" class="cui-badge"></span></h3>
+    <span style="font-size:12px;color:#94A3B8">Haz clic para abrir cada plataforma</span>
+  </div>
+  <div class="links-grid" id="linksGrid"></div>
+</div>
+
+<!-- CHECKLIST -->
+<div class="checklist-wrap" id="checklistWrap">
+  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:6px;padding:0 4px">
+    <div>
+      <div style="font-size:18px;font-weight:800;color:var(--dark)">&#9989; Lista de verificación · CUI <span id="cuiDisplay" style="color:var(--blue)"></span></div>
+      <div style="font-size:13px;color:var(--gray);margin-top:2px">Evalúa cada estándar con el semáforo: &#x1F7E2; Cumple &nbsp; &#x1F534; No cumple &nbsp; &#x1F7E1; No verificado</div>
+    </div>
+    <button onclick="expandAllStd()" style="padding:8px 16px;border-radius:8px;border:1.5px solid var(--lgray);background:#fff;font-size:13px;font-weight:600;cursor:pointer;font-family:inherit">&#128065; Ver todos los criterios</button>
+  </div>
+  <div id="checklistContent"></div>
+</div>
+
+<!-- BARRA DE RESUMEN -->
+<div class="resumen-bar" id="resumenBar">
+  <span style="font-size:13px;color:#94A3B8;font-weight:700;margin-right:4px">Progreso:</span>
+  <div class="res-item"><div class="res-dot" style="background:#16A34A"></div><span id="cntCumple" style="color:#4ADE80">0 Cumple</span></div>
+  <div class="res-item"><div class="res-dot" style="background:var(--red)"></div><span id="cntNoCumple" style="color:#FCA5A5">0 No cumple</span></div>
+  <div class="res-item"><div class="res-dot" style="background:var(--amber)"></div><span id="cntNoVerif" style="color:#FCD34D">0 No verificado</span></div>
+  <div class="res-item"><div class="res-dot" style="background:var(--lgray)"></div><span id="cntPend" style="color:#94A3B8">0 Pendiente</span></div>
+  <div style="margin-left:auto;display:flex;gap:8px;flex-wrap:wrap">
+    <button class="res-btn res-btn-reset" onclick="resetVeeduria()">&#8635; Reiniciar</button>
+    <button class="res-btn res-btn-pdf" onclick="generarReporte()">&#128196; Generar Reporte</button>
+  </div>
+</div>
+
+<!-- REPORTE -->
+<div class="report-wrap" id="reportWrap">
+  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:16px;padding:0 4px">
+    <div style="font-size:18px;font-weight:800;color:var(--dark)">&#128196; Reporte de Veeduría</div>
+    <div style="display:flex;gap:8px">
+      <button onclick="window.print()" style="padding:10px 18px;border-radius:8px;background:var(--navy);color:#fff;border:none;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit">&#128424; Imprimir / PDF</button>
+      <button onclick="document.getElementById('reportWrap').style.display='none';document.getElementById('checklistWrap').style.display='block'" style="padding:10px 18px;border-radius:8px;background:var(--offwhite);color:var(--dark);border:1.5px solid var(--lgray);font-size:13px;font-weight:700;cursor:pointer;font-family:inherit">&#8592; Volver</button>
+    </div>
+  </div>
+  <div class="report-card">
+    <div class="report-header">
+      <div>
+        <div style="font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#94A3B8;margin-bottom:4px">Reporte de Veeduría Ciudadana</div>
+        <div style="font-size:20px;font-weight:800;color:#fff">OBRAS QUE FUNCIONAN CON INTEGRIDAD</div>
+        <div style="font-size:13px;color:#94A3B8;margin-top:4px">CUI: <span id="repCUI" style="color:var(--gold);font-weight:700"></span> &nbsp;·&nbsp; Fecha: <span id="repFecha" style="color:#94A3B8"></span></div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-size:10px;color:#94A3B8;margin-bottom:4px">Elaborado por</div>
+        <div style="font-size:13px;font-weight:700;color:var(--gold)">Centro de Buen Gobierno e Integridad SCRL</div>
+        <div style="font-size:11px;color:#64748B;margin-top:2px">gobiernoeintegridad@gmail.com</div>
+      </div>
+    </div>
+    <div class="report-scores" id="repScores"></div>
+    <div style="padding:20px">
+      <table class="report-table" id="repTable">
+        <thead>
+          <tr>
+            <th style="width:40px">N°</th>
+            <th>Estándar</th>
+            <th style="width:120px">Estado</th>
+            <th>Observaciones</th>
+          </tr>
+        </thead>
+        <tbody id="repBody"></tbody>
+      </table>
+    </div>
+    <div style="padding:16px 20px;background:var(--offwhite);border-top:1px solid var(--lgray)">
+      <div style="font-size:11px;color:var(--gray);line-height:1.6">
+        <strong>Nota:</strong> Este reporte fue elaborado con la herramienta de Veeduría Virtual de la Guía de 12 Estándares de Integridad en la Contratación de Obras Públicas — Bajo el sistema de entrega Solo Construcción. Ley N° 32069 · D.S. N° 009-2025-EF. La evaluación es referencial y se basa en la información disponible en plataformas públicas al momento de la consulta.
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+var STANDARDS = [
+  {num:1,cls:"prep",name:"Declaración Jurada de Intereses y Conflicto de Interés",risk:"Captura del proceso",
+   preguntas:["¿El 100% de funcionarios vinculados presentaron su DJI antes de cada acto?","¿Se realizó el cruce DJI-FUP antes de otorgar la buena pro?"],
+   links:[{n:"DJI-CGR",u:"https://appdji.contraloria.gob.pe/djic/"},{n:"Portal Transparencia",u:"https://www.gob.pe/transparencia-economica"}]},
+  {num:2,cls:"prep",name:"Expediente Técnico de Obra (ETO) de calidad y completo",risk:"Deficiencias en ETO, sobrecosto y paralización",
+   preguntas:["¿El ETO incluye plan de interferencias y permisos?","¿El terreno tiene disponibilidad física acreditada?","¿El ETO incluye análisis de precios actualizados y matriz de riesgos?"],
+   links:[{n:"PLADICOP",u:"__PLADICOP__"},{n:"SAIP",u:"https://www.gob.pe/transparencia-economica"}]},
+  {num:3,cls:"prep",name:"Estrategia de contratación basada en interacción real con el mercado",risk:"Estrategia sin reflejo del mercado real",
+   preguntas:["¿Se realizó interacción con el mercado y sus resultados se incorporaron al ETO?","¿Se conformó comité de gestión de riesgos (obras > S/ 50M)?"],
+   links:[{n:"PLADICOP",u:"__PLADICOP__"}]},
+  {num:4,cls:"sel",name:"Convocatoria oportuna, completa y conforme a bases estándar",risk:"Convocatoria prematura o irregular",
+   preguntas:["¿La convocatoria se publicó con ETO aprobado y terreno disponible?","¿Las bases siguen la estructura de las bases estándar del OSCE?","¿Las bases incluyen el incentivo por culminación anticipada?"],
+   links:[{n:"PLADICOP",u:"__PLADICOP__"},{n:"OSCE",u:"https://www.gob.pe/osce"}]},
+  {num:5,cls:"sel",name:"Competencia efectiva y pluralidad de propuestas válidas",risk:"Colusión y restricción artificial de la competencia",
+   preguntas:["¿Los requisitos de calificación son proporcionales a la obra?","¿Se presentaron 3 o más propuestas válidas?"],
+   links:[{n:"PLADICOP",u:"__PLADICOP__"},{n:"Contrataciones Abiertas",u:"https://contratacionesabiertas.osce.gob.pe/busqueda"}]},
+  {num:6,cls:"sel",name:"Verificación de la idoneidad y documentación del postor ganador",risk:"Adjudicación a postor impedido o con documentación falsa",
+   preguntas:["¿Se verificaron impedimentos personales y por parentesco (FUP vs DJI)?","¿Se inició la fiscalización posterior de documentos del ganador?"],
+   links:[{n:"RNP-OSCE",u:"https://www.gob.pe/osce"},{n:"DJI-CGR",u:"https://appdji.contraloria.gob.pe/djic/"}]},
+  {num:7,cls:"ejec",name:"Suscripción del contrato con cláusulas completas y publicación oportuna",risk:"Contrato incompleto o con cláusulas irregulares",
+   preguntas:["¿El contrato incluye cláusulas anticorrupción, gestión de riesgos y garantías?","¿El contrato fue publicado en SEACE dentro de los 10 días hábiles?","¿Se designó coordinador del contrato antes del inicio?"],
+   links:[{n:"PLADICOP/SEACE",u:"__SEACE__"},{n:"SBS-Garantías",u:"https://www.sbs.gob.pe"}]},
+  {num:8,cls:"ejec",name:"Supervisión permanente, técnica e independiente de la obra",risk:"Supervisión deficiente o capturada",
+   preguntas:["¿El cuaderno de incidencias tiene anotaciones regulares del supervisor?","¿El SSI tiene información actualizada del avance físico-financiero?","¿Se aplicaron penalidades por sustitución irregular del plantel técnico?"],
+   links:[{n:"PLADICOP",u:"__PLADICOP__"},{n:"SSI-MEF",u:"__SSI__"},{n:"CIP",u:"https://www.cip.org.pe"}]},
+  {num:9,cls:"ejec",name:"Aprobación técnicamente sustentada de adicionales y ampliaciones de plazo",risk:"Adicionales irregulares o prediseñados",
+   preguntas:["¿Los adicionales aprobados tienen resolución previa a su ejecución?","¿Los adicionales no superan el 50% del contrato original?"],
+   links:[{n:"SSI-MEF",u:"__SSI__"},{n:"CGR-Informes",u:"https://appbp.contraloria.gob.pe/BuscadorCGR/informes/Avanzado.html"}]},
+  {num:10,cls:"ejec",name:"Valorizaciones y pagos oportunos, verificados y correctamente calculados",risk:"Retención indebida de pagos o pagos sin sustento",
+   preguntas:["¿Las valorizaciones se aprobaron dentro del plazo normativo?","¿No hay deuda de 2 o más valorizaciones consecutivas sin pago?","¿La última valorización incluye entrega de planos post-construcción?"],
+   links:[{n:"PLADICOP",u:"__PLADICOP__"},{n:"SIAF-MEF",u:"https://www.mef.gob.pe/es/siaf"}]},
+  {num:11,cls:"ejec",name:"Implementación oportuna de las medidas correctivas ante informes de la CGR",risk:"No implementación de situaciones adversas CGR",
+   preguntas:["¿La entidad notificó a la CGR implementación de medidas dentro de 3 meses?","¿El porcentaje de situaciones adversas corregidas es ≥ 75%?"],
+   links:[{n:"CGR-Informes",u:"https://appbp.contraloria.gob.pe/BuscadorCGR/informes/Avanzado.html"}]},
+  {num:12,cls:"ejec",name:"Recepción rigurosa de obra conforme al ETO y liquidación oportuna",risk:"Recepción deficiente o con vicios ocultos",
+   preguntas:["¿La comisión de recepción realizó verificación in situ dentro de los 15 días?","¿Participaron CIP, CAP u OCI en la recepción?","¿La liquidación fue aprobada dentro del plazo normativo?"],
+   links:[{n:"PLADICOP",u:"__PLADICOP__"},{n:"SUNARP",u:"https://www.sunarp.gob.pe/p_consultaenlinea.asp"}]},
+];
+
+var ETAPAS = {
+  prep:{label:"Actuaciones Preparatorias",color:"#0F766E"},
+  sel:{label:"Procedimiento de Selección",color:"#2563EB"},
+  ejec:{label:"Ejecución Contractual",color:"#C05C04"}
+};
+
+var PLATFORM_LINKS = [
+  {name:"SSI · MEF",desc:"Avance físico y financiero",icon:"&#128200;",bg:"#DBEAFE",param:"__SSI__"},
+  {name:"PLADICOP · SEACE",desc:"Expediente y contrato",icon:"&#128196;",bg:"#DCFCE7",param:"__PLADICOP__"},
+  {name:"SEACE Buscador",desc:"Procedimiento de selección",icon:"&#128269;",bg:"#FEF3C7",param:"__SEACE__"},
+  {name:"CGR · Informes",desc:"Informes de control",icon:"&#127959;",bg:"#FEE2E2",param:"__CGR__"},
+  {name:"DJI · Contraloría",desc:"Declaraciones Juradas",icon:"&#128203;",bg:"#F3E8FF",param:"__DJI__"},
+  {name:"OSCE · RNP",desc:"Registro de proveedores",icon:"&#127970;",bg:"#FFF7ED",param:"__OSCE__"},
+];
+
+var curCUI = "";
+var resultados = {};
+
+function getLinks(cui){
+  return {
+    "__SSI__": "https://ofi5.mef.gob.pe/ssi/",
+    "__PLADICOP__": "https://prod2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml",
+    "__SEACE__": "https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml",
+    "__CGR__": "https://appbp.contraloria.gob.pe/BuscadorCGR/informes/Avanzado.html",
+    "__DJI__": "https://appdji.contraloria.gob.pe/djic/",
+    "__OSCE__": "https://www.gob.pe/osce",
+  };
+}
+
+function resolveLink(url, cui){
+  var map = getLinks(cui);
+  return map[url] || url;
+}
+
+function iniciarVeeduria(){
+  var cui = document.getElementById("cuiInput").value.trim();
+  if(!cui || cui.length < 5){
+    alert("Por favor ingresa un CUI válido (mínimo 5 dígitos)");
+    return;
+  }
+  curCUI = cui;
+  resultados = {};
+
+  // Update CUI displays
+  document.getElementById("cuiBadge1").textContent = "CUI: " + cui;
+  document.getElementById("cuiDisplay").textContent = cui;
+  document.getElementById("repCUI").textContent = cui;
+  document.getElementById("repFecha").textContent = new Date().toLocaleDateString("es-PE",{day:"2-digit",month:"long",year:"numeric"});
+
+  // Build links panel
+  buildLinksPanel(cui);
+  document.getElementById("linksPanel").style.display = "block";
+
+  // Build checklist
+  buildChecklist(cui);
+  document.getElementById("checklistWrap").style.display = "block";
+  document.getElementById("resumenBar").style.display = "flex";
+  document.getElementById("reportWrap").style.display = "none";
+
+  // Scroll to links
+  document.getElementById("linksPanel").scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function buildLinksPanel(cui){
+  var map = getLinks(cui);
+  var grid = document.getElementById("linksGrid");
+  grid.innerHTML = PLATFORM_LINKS.map(function(pl){
+    var url = map[pl.param] || "#";
+    return '<a href="'+url+'" target="_blank" rel="noopener" class="link-item">'
+      +'<div class="link-icon" style="background:'+pl.bg+'">'+pl.icon+'</div>'
+      +'<div><div class="link-name">'+pl.name+'</div><div class="link-desc">'+pl.desc+'</div></div>'
+      +'&#128279;</a>';
+  }).join("");
+}
+
+function buildChecklist(cui){
+  var cont = document.getElementById("checklistContent");
+  var html = "";
+  var lastCls = "";
+
+  STANDARDS.forEach(function(std){
+    if(std.cls !== lastCls){
+      var et = ETAPAS[std.cls];
+      html += '<div class="phase-title">'
+        +'<div class="phase-badge" style="background:'+et.color+'">'+et.label+'</div>'
+        +'<div class="phase-line"></div></div>';
+      lastCls = std.cls;
+    }
+
+    var color = ETAPAS[std.cls].color;
+    // preguntas
+    var preguntasHtml = std.preguntas.map(function(p,pi){
+      var qid = "q_"+std.num+"_"+pi;
+      return '<div class="std-question">'
+        +'<p>'+p+'</p>'
+        +'<div class="q-options">'
+        +'<button class="q-btn" id="'+qid+'_c" onclick="setQ('+std.num+','+pi+',\'cumple\')">&#x1F7E2; Cumple</button>'
+        +'<button class="q-btn" id="'+qid+'_n" onclick="setQ('+std.num+','+pi+',\'no-cumple\')">&#x1F534; No cumple</button>'
+        +'<button class="q-btn" id="'+qid+'_v" onclick="setQ('+std.num+','+pi+',\'no-verificado\')">&#x1F7E1; No verificado</button>'
+        +'</div>'
+        +'<textarea class="obs-input" id="obs_'+std.num+'_'+pi+'" rows="2" placeholder="Observación opcional..."></textarea>'
+        +'</div>';
+    }).join("");
+
+    // links
+    var linksHtml = std.links.map(function(l){
+      var url = resolveLink(l.u, cui);
+      return '<a href="'+url+'" target="_blank" rel="noopener" class="donde-link">&#128279; '+l.n+'</a>';
+    }).join("");
+
+    html += '<div class="std-card" id="stdcard_'+std.num+'">'
+      +'<div class="std-header" onclick="toggleStd('+std.num+')">'
+      +'<div class="std-num" style="background:'+color+'">'+std.num+'</div>'
+      +'<div class="std-info">'
+      +'<div class="std-name">'+std.name+'</div>'
+      +'<div class="std-risk">&#9888; '+std.risk+'</div>'
+      +'</div>'
+      +'<div class="std-semaforo">'
+      +'<div>'
+      +'<button class="sem-btn" id="sem_'+std.num+'_c" onclick="event.stopPropagation();setSem('+std.num+',\'cumple\')" title="Cumple">&#x1F7E2;</button>'
+      +'<div class="sem-label">Cumple</div>'
+      +'</div>'
+      +'<div>'
+      +'<button class="sem-btn" id="sem_'+std.num+'_n" onclick="event.stopPropagation();setSem('+std.num+',\'no-cumple\')" title="No cumple">&#x1F534;</button>'
+      +'<div class="sem-label">No cumple</div>'
+      +'</div>'
+      +'<div>'
+      +'<button class="sem-btn" id="sem_'+std.num+'_v" onclick="event.stopPropagation();setSem('+std.num+',\'no-verificado\')" title="No verificado">&#x1F7E1;</button>'
+      +'<div class="sem-label">No verificado</div>'
+      +'</div>'
+      +'<span style="font-size:18px;color:#94A3B8;margin-left:4px" id="chev_'+std.num+'">&#9660;</span>'
+      +'</div>'
+      +'</div>'
+      +'<div class="std-detail">'
+      +'<div style="margin-bottom:12px"><strong style="font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:'+color+'">Verificar en:</strong> '+linksHtml+'</div>'
+      +preguntasHtml
+      +'</div>'
+      +'</div>';
+  });
+
+  cont.innerHTML = html;
+}
+
+function toggleStd(num){
+  var card = document.getElementById("stdcard_"+num);
+  card.classList.toggle("open");
+  var chev = document.getElementById("chev_"+num);
+  chev.innerHTML = card.classList.contains("open") ? "&#9650;" : "&#9660;";
+}
+
+function expandAllStd(){
+  STANDARDS.forEach(function(std){
+    var card = document.getElementById("stdcard_"+std.num);
+    card.classList.add("open");
+    document.getElementById("chev_"+std.num).innerHTML = "&#9650;";
+  });
+}
+
+function setSem(num, estado){
+  resultados[num] = resultados[num] || {estado:"pendiente",preguntas:{},obs:{}};
+  resultados[num].estado = estado;
+  // Update semaforo buttons
+  ["c","n","v"].forEach(function(k){
+    document.getElementById("sem_"+num+"_"+k).className = "sem-btn";
+  });
+  var map = {cumple:"c","no-cumple":"n","no-verificado":"v"};
+  var clsMap = {cumple:"active-cumple","no-cumple":"active-no-cumple","no-verificado":"active-no-verificado"};
+  document.getElementById("sem_"+num+"_"+map[estado]).className = "sem-btn " + clsMap[estado];
+  updateResumen();
+}
+
+function setQ(stdNum, qi, val){
+  resultados[stdNum] = resultados[stdNum] || {estado:"pendiente",preguntas:{},obs:{}};
+  resultados[stdNum].preguntas[qi] = val;
+  var qid = "q_"+stdNum+"_"+qi;
+  var clsMap = {cumple:"sel-cumple","no-cumple":"sel-no-cumple","no-verificado":"sel-no-verificado"};
+  ["_c","_n","_v"].forEach(function(k){
+    document.getElementById(qid+k).className = "q-btn";
+  });
+  var sufMap = {cumple:"_c","no-cumple":"_n","no-verificado":"_v"};
+  document.getElementById(qid+sufMap[val]).className = "q-btn " + clsMap[val];
+  // Auto-set semaforo based on majority
+  var counts = {cumple:0,"no-cumple":0,"no-verificado":0};
+  Object.values(resultados[stdNum].preguntas).forEach(function(v){counts[v]++;});
+  var max = Object.keys(counts).reduce(function(a,b){return counts[a]>=counts[b]?a:b;});
+  setSem(stdNum, max);
+}
+
+function updateResumen(){
+  var c=0,n=0,v=0,p=0;
+  STANDARDS.forEach(function(std){
+    var r = resultados[std.num];
+    if(!r || r.estado==="pendiente") p++;
+    else if(r.estado==="cumple") c++;
+    else if(r.estado==="no-cumple") n++;
+    else if(r.estado==="no-verificado") v++;
+  });
+  document.getElementById("cntCumple").textContent = c + " Cumple";
+  document.getElementById("cntNoCumple").textContent = n + " No cumple";
+  document.getElementById("cntNoVerif").textContent = v + " No verificado";
+  document.getElementById("cntPend").textContent = p + " Pendiente";
+}
+
+function generarReporte(){
+  // Collect observations
+  STANDARDS.forEach(function(std){
+    resultados[std.num] = resultados[std.num] || {estado:"pendiente",preguntas:{},obs:{}};
+    std.preguntas.forEach(function(p,pi){
+      var el = document.getElementById("obs_"+std.num+"_"+pi);
+      if(el && el.value.trim()) resultados[std.num].obs[pi] = el.value.trim();
+    });
+  });
+
+  var c=0,n=0,v=0,p=0;
+  STANDARDS.forEach(function(std){
+    var r = resultados[std.num];
+    if(!r || r.estado==="pendiente") p++;
+    else if(r.estado==="cumple") c++;
+    else if(r.estado==="no-cumple") n++;
+    else if(r.estado==="no-verificado") v++;
+  });
+
+  // Scores
+  document.getElementById("repScores").innerHTML =
+    '<div class="score-item"><div class="score-n" style="color:#16A34A">'+c+'</div><div class="score-label">Cumple</div></div>'
+    +'<div class="score-item"><div class="score-n" style="color:var(--red)">'+n+'</div><div class="score-label">No Cumple</div></div>'
+    +'<div class="score-item"><div class="score-n" style="color:var(--amber)">'+v+'</div><div class="score-label">No Verificado</div></div>';
+
+  // Table
+  var tbody = "";
+  STANDARDS.forEach(function(std){
+    var r = resultados[std.num];
+    var estado = (r && r.estado !== "pendiente") ? r.estado : "pendiente";
+    var tagMap = {
+      cumple:'<span class="tag tag-cumple">&#x1F7E2; Cumple</span>',
+      "no-cumple":'<span class="tag tag-no-cumple">&#x1F534; No cumple</span>',
+      "no-verificado":'<span class="tag tag-no-verificado">&#x1F7E1; No verificado</span>',
+      pendiente:'<span class="tag tag-pendiente">&#9643; Pendiente</span>'
+    };
+    var obs = "";
+    if(r && r.obs) obs = Object.values(r.obs).filter(Boolean).join(" / ");
+    tbody += '<tr>'
+      +'<td style="font-weight:800;color:'+ETAPAS[std.cls].color+'">'+std.num+'</td>'
+      +'<td>'+std.name+'</td>'
+      +'<td>'+tagMap[estado]+'</td>'
+      +'<td style="color:var(--gray)">'+obs+'</td>'
+      +'</tr>';
+  });
+  document.getElementById("repBody").innerHTML = tbody;
+
+  document.getElementById("checklistWrap").style.display = "none";
+  document.getElementById("reportWrap").style.display = "block";
+  document.getElementById("reportWrap").scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function resetVeeduria(){
+  if(!confirm("¿Reiniciar la veeduría? Se perderán los datos ingresados.")) return;
+  resultados = {};
+  document.getElementById("cuiInput").value = "";
+  document.getElementById("linksPanel").style.display = "none";
+  document.getElementById("checklistWrap").style.display = "none";
+  document.getElementById("resumenBar").style.display = "none";
+  document.getElementById("reportWrap").style.display = "none";
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+</script>
+</body>
+</html>
