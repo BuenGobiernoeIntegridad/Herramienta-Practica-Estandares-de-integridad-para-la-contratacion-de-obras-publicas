@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Obras que Funcionan con Integridad &middot; Gu&iacute;a de 12 Est&aacute;ndares de Integridad</title>
+<style>
+:root{--navy:#1A3A5C;--navydark:#0F2440;--teal:#0F766E;--teallt:#CCFBF1;--blue:#2563EB;--bluelt:#DBEAFE;--amber:#C05C04;--amberlt:#FEF3C7;--red:#DC2626;--redlt:#FEE2E2;--gold:#F59E0B;--white:#FFFFFF;--offwhite:#F8FAFC;--gray:#64748B;--lgray:#E2E8F0;--dark:#1E293B}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--offwhite);color:var(--dark);font-size:16px;line-height:1.7}
+header{background:var(--navydark);position:sticky;top:0;z-index:200;box-shadow:0 2px 16px rgba(0,0,0,.3)}
+.hdr-gold{height:5px;background:var(--gold)}
+.hdr-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 20px;gap:12px;flex-wrap:wrap}
+.hdr-brand{display:flex;align-items:center;gap:14px}
+.hdr-tag{background:var(--gold);color:var(--navy);font-size:11px;font-weight:800;letter-spacing:1.5px;padding:5px 12px;border-radius:4px;text-transform:uppercase;flex-shrink:0}
+.hdr-titles h1{font-size:22px;font-weight:800;color:#fff;line-height:1.1}
+.hdr-titles p{font-size:13px;color:#94A3B8;margin-top:3px}
+.hdr-actions{display:flex;gap:8px;align-items:center;flex-shrink:0}
+.btn{padding:9px 18px;border-radius:8px;border:none;cursor:pointer;font-size:13px;font-weight:700;display:flex;align-items:center;gap:6px;transition:all .2s}
+.btn-outline{background:transparent;border:1.5px solid #334155;color:#CBD5E1}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.btn-solid{background:var(--navy);color:#fff}.btn-solid:hover{background:var(--blue)}
+.filter-bar{background:var(--navy);padding:8px 20px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.08)}
+.flabel{font-size:10px;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-right:4px;flex-shrink:0}
+.fbtn{padding:7px 16px;border-radius:20px;border:1.5px solid #334155;background:transparent;color:#CBD5E1;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s}
+.fbtn:hover{border-color:var(--gold);color:var(--gold)}
+.fbtn.active-all{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.fbtn.active-prep{background:var(--teal);border-color:var(--teal);color:#fff}
+.fbtn.active-sel{background:var(--blue);border-color:var(--blue);color:#fff}
+.fbtn.active-ejec{background:var(--amber);border-color:var(--amber);color:#fff}
+.search-wrap{margin-left:auto;position:relative}
+.search-wrap input{padding:8px 36px 8px 14px;border-radius:20px;border:1.5px solid #334155;background:#0F172A;color:#E2E8F0;font-size:13px;width:250px;outline:none;transition:border-color .2s}
+.search-wrap input:focus{border-color:var(--gold)}
+.search-wrap input::placeholder{color:#4B5563}
+.search-icon{position:absolute;right:10px;top:50%;transform:translateY(-50%);color:#4B5563;font-size:13px;pointer-events:none}
+.hero{background:linear-gradient(135deg,var(--navydark) 0%,#1e4976 60%,#0F766E 100%);padding:36px 24px 28px;display:flex;flex-direction:column;gap:20px}
+.hero-text h2{font-size:36px;font-weight:900;color:#fff;line-height:1.15}
+.hero-text h2 em{color:var(--gold);font-style:normal}
+.hero-text p{margin-top:10px;color:#94A3B8;font-size:15px;max-width:580px;line-height:1.7}
+.hero-audience{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+.aud-pill{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:20px;padding:7px 16px;font-size:13px;color:#E2E8F0}
+.hero-pills{display:flex;gap:12px;flex-wrap:wrap}
+.hpill{border-radius:12px;padding:14px 18px;text-align:center;min-width:120px;border:1px solid rgba(255,255,255,.15)}
+.hpill.prep{background:rgba(15,118,110,.3)}.hpill.sel{background:rgba(37,99,235,.3)}.hpill.ejec{background:rgba(192,92,4,.3)}
+.hpill .pn{font-size:32px;font-weight:900;display:block}
+.hpill.prep .pn{color:#5EEAD4}.hpill.sel .pn{color:#93C5FD}.hpill.ejec .pn{color:var(--amberlt)}
+.hpill .pl{font-size:10px;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;margin-top:2px;display:block}
+.progress-bar{background:var(--navy);padding:10px 24px;display:flex;align-items:center;gap:12px}
+.prog-label{font-size:10px;color:#64748B;white-space:nowrap}
+.prog-track{flex:1;height:4px;background:#1E293B;border-radius:2px}
+.prog-fill{height:4px;background:var(--gold);border-radius:2px;transition:width .4s}
+.prog-count{font-size:10px;color:#64748B;white-space:nowrap}
+.container{max-width:1200px;margin:0 auto;padding:24px 16px}
+.section-header{display:flex;align-items:center;gap:12px;margin:28px 0 14px}
+.sbadge{padding:8px 20px;border-radius:6px;font-size:12px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#fff;flex-shrink:0}
+.sbadge-prep{background:var(--teal)}.sbadge-sel{background:var(--blue)}.sbadge-ejec{background:var(--amber)}
+.sline{flex:1;height:1px;background:var(--lgray)}.scnt{font-size:10px;color:var(--gray);flex-shrink:0}
+.card{background:#fff;border-radius:12px;margin-bottom:12px;border:1px solid var(--lgray);box-shadow:0 1px 4px rgba(0,0,0,.06);overflow:hidden;transition:box-shadow .2s}
+.card:hover{box-shadow:0 4px 18px rgba(0,0,0,.10)}
+.card-hdr{display:flex;align-items:stretch;cursor:pointer;user-select:none;min-height:62px}
+.card-num{width:62px;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:900;color:#fff;flex-shrink:0}
+.num-prep{background:var(--teal)}.num-sel{background:var(--blue)}.num-ejec{background:var(--amber)}
+.card-meta{flex:1;padding:10px 14px;display:flex;flex-direction:column;justify-content:center;gap:3px}
+.card-etag{font-size:11px;font-weight:700;letter-spacing:.7px;text-transform:uppercase}
+.etag-prep{color:var(--teal)}.etag-sel{color:var(--blue)}.etag-ejec{color:var(--amber)}
+.card-title{font-size:16px;font-weight:700;color:var(--dark);line-height:1.35}
+.card-right{display:flex;align-items:center;gap:8px;padding:10px 14px;flex-shrink:0}
+.cbadge{font-size:12px;background:var(--offwhite);border:1px solid var(--lgray);color:var(--gray);border-radius:12px;padding:4px 12px;white-space:nowrap}
+.risk-pill{font-size:12px;background:var(--redlt);color:var(--red);border-radius:12px;padding:4px 12px;font-weight:700;white-space:nowrap}
+.chevron{font-size:13px;color:var(--gray);transition:transform .25s;margin-left:4px}
+.card.open .chevron{transform:rotate(180deg)}
+.card-body{display:none;border-top:1px solid var(--lgray)}.card.open .card-body{display:block}
+.desc-strip{padding:16px 22px;background:#FAFBFC;border-bottom:1px solid var(--lgray);font-size:15px;color:var(--dark);line-height:1.7}
+.desc-strip strong{display:block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--gray);margin-bottom:6px}
+.risk-banner{background:var(--redlt);border-left:4px solid var(--red);padding:12px 20px;display:flex;gap:10px;align-items:flex-start}
+.risk-banner .ri{font-size:16px;flex-shrink:0;margin-top:2px}
+.risk-name{font-size:10px;font-weight:800;color:var(--red);text-transform:uppercase;letter-spacing:.5px}
+.risk-desc{font-size:14px;color:#7F1D1D;margin-top:4px;white-space:pre-line}
+.crit-header-row{padding:10px 20px 6px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:var(--gray);border-bottom:1px solid var(--lgray);background:#fff}
+.criterion{border-bottom:1px solid var(--lgray)}.criterion:last-child{border-bottom:none}
+.crit-hdr{display:flex;align-items:flex-start;gap:10px;padding:12px 20px;cursor:pointer;user-select:none;transition:background .15s}
+.crit-hdr:hover{background:var(--offwhite)}
+.crit-dot{width:22px;height:22px;border-radius:50%;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;color:#fff}
+.dot-prep{background:var(--teal)}.dot-sel{background:var(--blue)}.dot-ejec{background:var(--amber)}
+.crit-text{flex:1;font-size:15px;font-weight:500;color:var(--dark);line-height:1.6}
+.crit-chev{font-size:11px;color:var(--gray);transition:transform .2s;flex-shrink:0;margin-top:4px}
+.criterion.open .crit-chev{transform:rotate(180deg)}
+.crit-detail{display:none;background:#FAFBFC;border-top:1px dashed var(--lgray)}
+.criterion.open .crit-detail{display:block}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:0}
+@media(max-width:680px){.detail-grid{grid-template-columns:1fr}}
+.dpanel{padding:14px 20px;border-right:1px solid var(--lgray);border-bottom:1px solid var(--lgray)}
+.dpanel:nth-child(even){border-right:none}.dpanel:nth-last-child(-n+2){border-bottom:none}
+.dpanel-full{grid-column:1/-1;border-right:none!important}
+.dlabel{display:flex;align-items:center;gap:6px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;margin-bottom:8px}
+.dl-donde{color:var(--blue)}.dl-porque{color:var(--teal)}.dl-norma{color:var(--amber)}
+.dcontent{font-size:14px;color:var(--dark);white-space:pre-line;line-height:1.7}
+.plink{display:inline-flex;align-items:center;gap:4px;background:var(--bluelt);color:var(--blue);border-radius:5px;padding:2px 8px;font-size:11px;font-weight:600;text-decoration:none;margin:2px 2px 2px 0;transition:background .15s;word-break:break-all}
+.plink:hover{background:#BFDBFE;text-decoration:underline}
+.no-results{text-align:center;padding:60px 24px;color:var(--gray);display:none}
+.no-results .nr-icon{font-size:44px;margin-bottom:14px}
+footer{background:var(--navydark);color:#64748B;font-size:11px;text-align:center;padding:28px 24px;margin-top:56px;border-top:4px solid var(--gold);line-height:1.8}
+footer strong{color:#94A3B8}
+.footer-brand{font-size:13px;color:var(--gold);font-weight:700;margin-bottom:6px}
+.footer-nota{margin-top:14px;font-size:11px;color:#94A3B8;font-style:normal;max-width:800px;margin-left:auto;margin-right:auto;line-height:1.7;border-top:1px solid #334155;padding-top:14px}
+@media print{header,.filter-bar,.hdr-actions,.hero-pills,.chevron,.crit-chev,.progress-bar{display:none!important}.card-body{display:block!important}.crit-detail{display:block!important}.card{box-shadow:none;border:1px solid #ccc;margin-bottom:16px;page-break-inside:avoid}body{font-size:11px}}
+mark{background:#FEF08A;border-radius:2px;padding:0 1px}
+
+.timeline-wrap{display:flex;align-items:stretch;gap:0;width:100%;flex-wrap:nowrap;margin-top:8px}
+.tl-phase{flex:1;min-width:0;display:flex;flex-direction:column;border-radius:10px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.tl-phase-hdr{display:flex;align-items:center;gap:6px;padding:8px 10px;cursor:default}
+.tl-phase-n{font-size:24px;font-weight:900;color:#fff;line-height:1;flex-shrink:0}
+.tl-phase-info{display:flex;flex-direction:column;gap:1px;min-width:0}
+.tl-phase-tag{font-size:7px;font-weight:800;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:1px}
+.tl-phase-label{font-size:10px;font-weight:700;color:#fff;line-height:1.2;white-space:normal}
+.tl-stds{background:#fff;flex:1;display:flex;flex-direction:column;border:1px solid rgba(0,0,0,.08);border-top:none;border-radius:0 0 10px 10px}
+.tl-std{display:flex;align-items:flex-start;gap:6px;padding:5px 8px;cursor:pointer;transition:background .15s;border-bottom:1px solid #F1F5F9}
+.tl-std:last-child{border-bottom:none}
+.tl-std:hover{background:#F8FAFC}
+.tl-std:hover .tl-std-name{text-decoration:underline}
+.tl-std-num{width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:800;color:#fff;flex-shrink:0;margin-top:1px}
+.tl-std-name{font-size:10px;color:#1E293B;line-height:1.3}
+.tl-arrow{display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.5);font-size:16px;padding:0 3px;flex-shrink:0;align-self:center;margin-top:-16px}
+@media(max-width:600px){.timeline-wrap{flex-direction:column}.tl-arrow{transform:rotate(90deg);margin:4px auto}}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="hdr-gold"></div>
+  <div class="hdr-inner">
+    <div class="hdr-brand">
+      <div class="hdr-tag">Herramienta Pr&aacute;ctica</div>
+      <div class="hdr-titles">
+        <h1>OBRAS QUE FUNCIONAN CON INTEGRIDAD</h1>
+        <p>Gu&iacute;a de 12 Est&aacute;ndares de Integridad en la Contrataci&oacute;n de Obras P&uacute;blicas</p>
+        <p style="font-size:10px;color:var(--gold);font-weight:600;margin-top:2px;letter-spacing:.3px">Bajo el sistema de entrega Solo Construcci&oacute;n</p>
+      </div>
+    </div>
+    <div class="hdr-actions">
+      <button class="btn btn-outline" onclick="expandAll(true)">&#128194; Expandir todo</button>
+      <button class="btn btn-outline" onclick="expandAll(false)">&#128193; Colapsar</button>
+      <a href="veeduria.html" class="btn btn-solid" style="background:var(--teal);text-decoration:none" target="_blank">&#128269; Veeduría Virtual</a>
+      <button class="btn btn-solid" onclick="window.print()">&#128424; Imprimir</button>
+    </div>
+  </div>
+  <div style="background:var(--navydark);padding:4px 20px;border-top:1px solid rgba(255,255,255,.06);text-align:right">
+    <span style="font-size:10px;color:var(--gold);font-weight:700">Elaborado por el Centro de Buen Gobierno e Integridad SCRL</span>
+  </div>
+  <div class="filter-bar">
+    <span class="flabel">Fase:</span>
+    <button class="fbtn active-all" data-f="all" onclick="setFilter('all',this)">&#10022; Todos (12)</button>
+    <button class="fbtn" data-f="prep" onclick="setFilter('prep',this)">Actuaciones Preparatorias (3)</button>
+    <button class="fbtn" data-f="sel" onclick="setFilter('sel',this)">Procedimiento de Selecci&oacute;n (3)</button>
+    <button class="fbtn" data-f="ejec" onclick="setFilter('ejec',this)">Ejecuci&oacute;n Contractual (6)</button>
+    <div class="search-wrap">
+      <input type="text" id="srch" placeholder="Buscar est&aacute;ndar, criterio, plataforma&hellip;" oninput="doSearch(this.value)">
+      <span class="search-icon">&#128269;</span>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-text">
+    <h2>OBRAS QUE <em>FUNCIONAN</em><br><span style="font-size:22px;font-weight:700;color:#fff">CON INTEGRIDAD</span></h2>
+    <p>Herramienta pr&aacute;ctica para gestionar riesgos en los principales hitos de la contrataci&oacute;n p&uacute;blica, bajo un enfoque de integridad y transparencia.</p>
+    <div class="hero-audience">
+      <span class="aud-pill">Funcionarios, servidores y empresas que colaboraron para culminar con &eacute;xito la obra</span>
+      <span class="aud-pill">Sector privado y sociedad civil que realizan seguimiento y veedu&iacute;a</span>
+      <span class="aud-pill">Ley N&deg; 32069 &middot; D.S. N&deg; 009-2025-EF</span>
+    </div>
+  </div>
+  <div class="hero-pills" style="width:100%;margin-top:20px">
+<div class="timeline-wrap">
+<div class="tl-phase"><div class="tl-phase-hdr" style="background:#0F766E"><span class="tl-phase-n">3</span><div class="tl-phase-info"><span class="tl-phase-tag">ESTÁNDARES</span><span class="tl-phase-label">Actuaciones Preparatorias</span></div></div><div class="tl-stds" style="border-color:#0F766E20"><div class="tl-std" onclick="goToStd(1)" title="Ir al estándar 1"><span class="tl-std-num" style="background:#0F766E">1</span><span class="tl-std-name">Declaración Jurada de Intereses y Conflicto de Interés</span></div><div class="tl-std" onclick="goToStd(2)" title="Ir al estándar 2"><span class="tl-std-num" style="background:#0F766E">2</span><span class="tl-std-name">Expediente Técnico de Obra (ETO) de calidad y completo</span></div><div class="tl-std" onclick="goToStd(3)" title="Ir al estándar 3"><span class="tl-std-num" style="background:#0F766E">3</span><span class="tl-std-name">Estrategia de contratación basada en interacción real con el mercado</span></div></div></div><div class="tl-arrow">&#9654;</div><div class="tl-phase"><div class="tl-phase-hdr" style="background:#2563EB"><span class="tl-phase-n">3</span><div class="tl-phase-info"><span class="tl-phase-tag">ESTÁNDARES</span><span class="tl-phase-label">Procedimiento de Selección</span></div></div><div class="tl-stds" style="border-color:#2563EB20"><div class="tl-std" onclick="goToStd(4)" title="Ir al estándar 4"><span class="tl-std-num" style="background:#2563EB">4</span><span class="tl-std-name">Convocatoria oportuna, completa y conforme a bases estándar</span></div><div class="tl-std" onclick="goToStd(5)" title="Ir al estándar 5"><span class="tl-std-num" style="background:#2563EB">5</span><span class="tl-std-name">Competencia efectiva y pluralidad de propuestas válidas</span></div><div class="tl-std" onclick="goToStd(6)" title="Ir al estándar 6"><span class="tl-std-num" style="background:#2563EB">6</span><span class="tl-std-name">Verificación de la idoneidad y documentación del postor ganador</span></div></div></div><div class="tl-arrow">&#9654;</div><div class="tl-phase"><div class="tl-phase-hdr" style="background:#C05C04"><span class="tl-phase-n">6</span><div class="tl-phase-info"><span class="tl-phase-tag">ESTÁNDARES</span><span class="tl-phase-label">Ejecución Contractual</span></div></div><div class="tl-stds" style="border-color:#C05C0420"><div class="tl-std" onclick="goToStd(7)" title="Ir al estándar 7"><span class="tl-std-num" style="background:#C05C04">7</span><span class="tl-std-name">Suscripción del contrato con cláusulas completas y publicación oportuna</span></div><div class="tl-std" onclick="goToStd(8)" title="Ir al estándar 8"><span class="tl-std-num" style="background:#C05C04">8</span><span class="tl-std-name">Supervisión permanente, técnica e independiente de la obra</span></div><div class="tl-std" onclick="goToStd(9)" title="Ir al estándar 9"><span class="tl-std-num" style="background:#C05C04">9</span><span class="tl-std-name">Aprobación técnicamente sustentada de adicionales y ampliaciones de plazo</span></div><div class="tl-std" onclick="goToStd(10)" title="Ir al estándar 10"><span class="tl-std-num" style="background:#C05C04">10</span><span class="tl-std-name">Valorizaciones y pagos oportunos, verificados y correctamente calculados</span></div><div class="tl-std" onclick="goToStd(11)" title="Ir al estándar 11"><span class="tl-std-num" style="background:#C05C04">11</span><span class="tl-std-name">Implementación oportuna de las medidas correctivas ante informes de la CGR</span></div><div class="tl-std" onclick="goToStd(12)" title="Ir al estándar 12"><span class="tl-std-num" style="background:#C05C04">12</span><span class="tl-std-name">Recepción rigurosa de obra conforme al ETO y liquidación oportuna</span></div></div></div>
+</div>
+  </div>
+</div>
+
+<div style="background:linear-gradient(90deg,#0F766E,#2563EB,#C05C04);padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap"><div style="display:flex;align-items:center;gap:10px;color:#fff"><span style="font-size:28px">&#128203;</span><div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;opacity:.8">Fase 1</div><div style="font-size:14px;font-weight:700">Planificar bien</div></div></div><span style="color:rgba(255,255,255,.4);font-size:22px">&#8594;</span><div style="display:flex;align-items:center;gap:10px;color:#fff"><span style="font-size:28px">&#128269;</span><div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;opacity:.8">Fase 2</div><div style="font-size:14px;font-weight:700">Seleccionar con transparencia</div></div></div><span style="color:rgba(255,255,255,.4);font-size:22px">&#8594;</span><div style="display:flex;align-items:center;gap:10px;color:#fff"><span style="font-size:28px">&#127959;</span><div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;opacity:.8">Fase 3</div><div style="font-size:14px;font-weight:700">Ejecutar y verificar</div></div></div><span style="color:rgba(255,255,255,.4);font-size:22px">&#8594;</span><div style="display:flex;align-items:center;gap:10px;color:#fff"><span style="font-size:28px">&#9989;</span><div><div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;opacity:.8">Resultado</div><div style="font-size:14px;font-weight:700">Obra que funciona</div></div></div></div>
+<!-- DATOS IMPACTANTES + PERSONAJES -->
+<div style="background:#fff;padding:28px 24px 20px;border-bottom:3px solid var(--lgray)">
+
+  <!-- Título sección -->
+  <div style="text-align:center;margin-bottom:22px">
+    <span style="font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--gray)">&#128161; ¿Por qué importa esta guía?</span>
+  </div>
+
+  <!-- Tarjetas de datos impactantes -->
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:28px">
+
+    <div style="background:linear-gradient(135deg,#FEE2E2,#FECACA);border-radius:14px;padding:18px 16px;text-align:center;border:1px solid #FCA5A5">
+      <div style="font-size:38px;font-weight:900;color:#DC2626;line-height:1">+60%</div>
+      <div style="font-size:14px;font-weight:700;color:#7F1D1D;margin-top:6px">de obras tienen adicionales</div>
+      <div style="font-size:13px;color:#991B1B;margin-top:3px">por deficiencias en el ETO</div>
+    </div>
+
+    <div style="background:linear-gradient(135deg,#FEF3C7,#FDE68A);border-radius:14px;padding:18px 16px;text-align:center;border:1px solid #FCD34D">
+      <div style="font-size:32px;font-weight:900;color:#B45309;line-height:1">2,572 obras</div>
+      <div style="font-size:14px;font-weight:700;color:#78350F;margin-top:6px">paralizadas · S/ 43,163 millones</div>
+      <div style="font-size:13px;color:#92400E;margin-top:3px">afectan a millones de ciudadanos · CGR marzo 2025</div>
+    </div>
+
+    <div style="background:linear-gradient(135deg,#DBEAFE,#BFDBFE);border-radius:14px;padding:18px 16px;text-align:center;border:1px solid #93C5FD">
+      <div style="font-size:38px;font-weight:900;color:#1D4ED8;line-height:1">6 de 10</div>
+      <div style="font-size:14px;font-weight:700;color:#1E3A8A;margin-top:6px">sanciones del TCP</div>
+      <div style="font-size:13px;color:#1E40AF;margin-top:3px">son por documentación falsa o inexacta</div>
+    </div>
+
+    <div style="background:linear-gradient(135deg,#CCFBF1,#99F6E4);border-radius:14px;padding:18px 16px;text-align:center;border:1px solid #5EEAD4">
+      <div style="font-size:38px;font-weight:900;color:#0F766E;line-height:1">12</div>
+      <div style="font-size:14px;font-weight:700;color:#134E4A;margin-top:6px">estándares de integridad</div>
+      <div style="font-size:13px;color:#115E59;margin-top:3px">para prevenir, detectar y corregir riesgos</div>
+    </div>
+
+  </div>
+
+  <!-- Personajes -->
+  <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center">
+
+    <!-- Personaje 1: Funcionario -->
+    <div style="background:linear-gradient(135deg,#EFF6FF,#DBEAFE);border-radius:16px;padding:20px;flex:1;min-width:260px;max-width:420px;border:1.5px solid #93C5FD;display:flex;gap:16px;align-items:flex-start">
+      <div style="flex-shrink:0;width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#2563EB,#1D4ED8);display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 4px 12px rgba(37,99,235,.3)">&#128119;</div>
+      <div>
+        <div style="font-size:16px;font-weight:800;color:#1E3A8A">Soy funcionario público</div>
+        <div style="font-size:13px;font-weight:600;color:#2563EB;margin-top:2px">Gestiono contratos de obra</div>
+        <div style="font-size:13px;color:#1E40AF;margin-top:8px;line-height:1.6">
+          Uso esta guía para <strong>tomar decisiones correctas</strong> en cada etapa, reducir riesgos legales y garantizar que la obra llegue a los ciudadanos.
+        </div>
+        <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">
+          <span style="background:#2563EB;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">&#9989; Prevenir</span>
+          <span style="background:#1D4ED8;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">&#128203; Documentar</span>
+          <span style="background:#1E40AF;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">&#9878; Corregir</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Personaje 2: Ciudadano veedor -->
+    <div style="background:linear-gradient(135deg,#F0FDF4,#DCFCE7);border-radius:16px;padding:20px;flex:1;min-width:260px;max-width:420px;border:1.5px solid #86EFAC;display:flex;gap:16px;align-items:flex-start">
+      <div style="flex-shrink:0;width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#16A34A,#15803D);display:flex;align-items:center;justify-content:center;font-size:30px;box-shadow:0 4px 12px rgba(22,163,74,.3)">&#128101;</div>
+      <div>
+        <div style="font-size:16px;font-weight:800;color:#14532D">Soy ciudadano veedor</div>
+        <div style="font-size:13px;font-weight:600;color:#16A34A;margin-top:2px">Vigilo las obras de mi comunidad</div>
+        <div style="font-size:13px;color:#166534;margin-top:8px;line-height:1.6">
+          Uso esta guía para <strong>saber qué preguntar</strong>, dónde buscar información y cómo reportar irregularidades en las obras públicas.
+        </div>
+        <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap">
+          <span style="background:#16A34A;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">&#128269; Verificar</span>
+          <span style="background:#15803D;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">&#128226; Reportar</span>
+          <span style="background:#166534;color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">&#127970; Cuidar mi obra</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="progress-bar">
+  <span class="prog-label">Progreso de lectura</span>
+  <div class="prog-track"><div class="prog-fill" id="progFill" style="width:0%"></div></div>
+  <span class="prog-count" id="progCount">0 / 12 est&aacute;ndares revisados</span>
+</div>
+
+<div class="container">
+  <div id="cards"></div>
+  <div class="no-results" id="noRes"><div class="nr-icon">&#128270;</div><p>No se encontraron resultados.</p></div>
+</div>
+
+<!-- FORMULARIO DE CONTACTO -->
+<div style="background:var(--navydark);padding:40px 24px;margin-top:0">
+  <div style="max-width:700px;margin:0 auto">
+
+    <div style="text-align:center;margin-bottom:28px">
+      <div style="display:inline-block;background:var(--gold);color:var(--navy);font-size:11px;font-weight:800;letter-spacing:1.5px;padding:5px 14px;border-radius:4px;text-transform:uppercase;margin-bottom:12px">Contáctanos</div>
+      <h3 style="font-size:22px;font-weight:800;color:#fff;margin:0">¿Tienes una consulta o comentario?</h3>
+      <p style="font-size:14px;color:#94A3B8;margin-top:8px">Escríbenos y te respondemos a la brevedad.<br>
+      También puedes escribirnos a <a href="/cdn-cgi/l/email-protection#8bece4e9e2eef9e5e4eee2e5ffeeecf9e2efeaefcbece6eae2e7a5e8e4e6" style="color:var(--gold);font-weight:600"><span class="__cf_email__" data-cfemail="4f28202d262a3d21202a26213b2a283d262b2e2b0f28222e2623612c2022">[email&#160;protected]</span></a></p>
+    </div>
+
+    <!-- Netlify Form -->
+    <form name="consultas-guia" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+          style="display:flex;flex-direction:column;gap:14px"
+          onsubmit="handleFormSubmit(event)">
+      <input type="hidden" name="form-name" value="consultas-guia">
+      <input type="hidden" name="bot-field" style="display:none">
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+        <div>
+          <label style="font-size:12px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:6px">Nombre *</label>
+          <input type="text" name="nombre" required placeholder="Tu nombre completo"
+                 style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid #334155;background:#0F172A;color:#E2E8F0;font-size:14px;outline:none;transition:border-color .2s;font-family:inherit"
+                 onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='#334155'">
+        </div>
+        <div>
+          <label style="font-size:12px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:6px">Entidad / Institución</label>
+          <input type="text" name="entidad" placeholder="Nombre de tu entidad u organización"
+                 style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid #334155;background:#0F172A;color:#E2E8F0;font-size:14px;outline:none;transition:border-color .2s;font-family:inherit"
+                 onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='#334155'">
+        </div>
+      </div>
+
+      <div>
+        <label style="font-size:12px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:6px">Correo electrónico *</label>
+        <input type="email" name="correo" required placeholder="tucorreo@ejemplo.com"
+               style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid #334155;background:#0F172A;color:#E2E8F0;font-size:14px;outline:none;transition:border-color .2s;font-family:inherit"
+               onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='#334155'">
+      </div>
+
+      <div>
+        <label style="font-size:12px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:6px">Tipo de consulta</label>
+        <select name="tipo"
+                style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid #334155;background:#0F172A;color:#E2E8F0;font-size:14px;outline:none;font-family:inherit;cursor:pointer"
+                onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='#334155'">
+          <option value="">Selecciona una opción</option>
+          <option value="consulta-estandar">Consulta sobre un estándar específico</option>
+          <option value="capacitacion">Solicitud de capacitación</option>
+          <option value="asesoria">Solicitud de asesoría técnica</option>
+          <option value="veeduria">Apoyo para veeduría ciudadana</option>
+          <option value="sugerencia">Sugerencia de mejora a la guía</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div>
+        <label style="font-size:12px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.5px;display:block;margin-bottom:6px">Mensaje *</label>
+        <textarea name="mensaje" required rows="4" placeholder="Escribe tu consulta o comentario aquí..."
+                  style="width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid #334155;background:#0F172A;color:#E2E8F0;font-size:14px;outline:none;transition:border-color .2s;font-family:inherit;resize:vertical"
+                  onfocus="this.style.borderColor='var(--gold)'" onblur="this.style.borderColor='#334155'"></textarea>
+      </div>
+
+      <button type="submit"
+              style="background:var(--gold);color:var(--navy);border:none;border-radius:8px;padding:14px 28px;font-size:15px;font-weight:800;cursor:pointer;transition:all .2s;font-family:inherit;align-self:flex-start"
+              onmouseover="this.style.background='#E08E09'" onmouseout="this.style.background='var(--gold)'">
+        &#128231; Enviar consulta
+      </button>
+    </form>
+
+    <!-- Success message -->
+    <div id="form-success" style="display:none;background:#065F46;border:1px solid #10B981;border-radius:12px;padding:20px 24px;text-align:center;margin-top:16px">
+      <div style="font-size:32px;margin-bottom:8px">&#9989;</div>
+      <div style="font-size:16px;font-weight:700;color:#fff">¡Mensaje enviado con éxito!</div>
+      <div style="font-size:13px;color:#6EE7B7;margin-top:6px">Te responderemos a la brevedad en tu correo electrónico.</div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="footer-brand">OBRAS QUE FUNCIONAN CON INTEGRIDAD</div>
+  <strong>Gu&iacute;a de 12 Est&aacute;ndares de Integridad en la Contrataci&oacute;n de Obras P&uacute;blicas</strong><br>
+  Para funcionarios que contratan y ciudadanos que realizan veedu&iacute;a<br><br>
+  Elaborado por el <strong style="color:var(--gold)">Centro de Buen Gobierno e Integridad SCRL</strong><br>
+  <div class="footer-nota">
+    <span style="color:#94A3B8;font-weight:700">Nota:</span> Esta Gu&iacute;a es una versi&oacute;n actualizada y adaptada del documento &lsquo;Est&aacute;ndares de Integridad en la Contrataci&oacute;n de la Obra P&uacute;blica&rsquo; publicado originalmente por el Proyecto TPI de USAID el a&ntilde;o 2022. La presente edici&oacute;n incorpora los cambios normativos de la Ley N&deg; 32069 y reestructura los est&aacute;ndares para su aplicaci&oacute;n t&eacute;cnica actual.
+  </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+var DATA=[{"etapa":"ACTUACIONES PREPARATORIAS","numero":1,"denominacion":"Declaración Jurada de Intereses y Conflicto de Interés","descripcion":"La entidad garantiza que todos los funcionarios y servidores vinculados al proceso de contratación presentan su Declaración Jurada de Intereses (DJI) antes de cada acto en que participan, y que no existe conflicto de interés entre ellos y el postor adjudicado o contratista.","riesgo":"Riesgo de CAPTURA DEL PROCESO:\nFuncionarios con vínculos personales, familiares o societarios con el contratista adjudicado toman decisiones que favorecen sus intereses privados sobre el interés público, sin que exista registro que permita identificar ni sancionar el conflicto.","criterios":[{"criterio":"El 100% de los funcionarios vinculados al proceso de contratación han presentado su DJI con fecha anterior o simultánea al acto en el que participan. (Se indica la lista de funcionarios que deben presentar su DDJJ por estar vinculados a la contratación)","norma":"Art. 3, 5 y 9 de Ley N° 31227 (Ley DJI). \nResolución de Contraloría N° 158- 2021-CG, que reglamenta la Ley 31227\nArt. 30, 31 y 32 de Ley N° 32069.\nArt. 36 del Reglamento D.S. N° 009-2025-EF (FUP).","donde":"• Plataforma DJI-CGR: https://appdji.contraloria.gob.pe/djic/\n• Portal de Transparencia de la entidad (Ley N° 27806): sección 'Declaraciones Juradas'.","porque":"Verificar que ningún funcionario o servidor decisor tenga vínculos con el adjudicado o contratista. Si la DJI no fue presentada antes del acto, el vínculo no queda documentado y el conflicto de interés es imposible de probar ex post, generando impunidad."},{"criterio":"La DEC realiza el cruce entre las DJI de los funcionarios participantes en el proceso de contratación* y la FUP del postor que va a ser adjudicado antes de otorgar la buena pro, y el resultado se registra en el expediente de contratación.\n(*) El cruce de DJI con la FUP es verificado por la entidad o la sociedad civil mediante la plataforma de la CGR, cruzando la información de las DJI presentadas con los representantes, accionistas o miembros del directorio del ganador y/o contratista.","norma":"","donde":"• RNP – FUP del proveedor: https://www.gob.pe/osce → RNP → 'Consulta de proveedores' (ingresar RUC).\n• Plataforma DJI-CGR: https://appdji.contraloria.gob.pe/djic/\n• Expediente de contratación (SAIP): buscar informe de cruce DJI-FUP con fecha anterior a la buena pro.","porque":"El cruce DJI-FUP realizado antes de la adjudicación o firma del contrato es el  mecanismo que permite verificar un posible conflicto de interés y/o o una causal de impedimento. Si se realiza después, la decisión ya fue tomada y ello representa un gran riesgo de integridad en la contratación, como es nulidad, paralización o controversias que no permitan culminar la obra oportunamente."}]},{"etapa":"ACTUACIONES PREPARATORIAS","numero":2,"denominacion":"Expediente Técnico de Obra (ETO) de calidad y completo","descripcion":"La entidad aprueba el ETO solo cuando es técnicamente completo, con costos sustentados en precios de mercado, terreno disponible e interferencias identificadas; garantizando que la obra pueda iniciarse, ejecutarse sin interrupciones y culminarse en el plazo y costo previstos.","riesgo":"Riesgo de DEFICIENCIAS EN EL ETO,  RIESGO DE SUSPENSIÓN, PARALIZACIÓN O SOBRECOSTO:\nUn ETO incompleto o sin estudios básicos permite diseñar adicionales y ampliaciones de plazo previsibles que se ejecutan sin competencia durante la obra, transfiriendo recursos públicos al contratista por encima del valor real de la prestación.\n\nSi no se reduce este riesgo:\n• Adicionales de obra que superan el 50% del contratO.\n• Paralizaciones por interferencias no identificadas en el ETO.\n• Incremento del precio durante la ejecución del contrato por un ETO incompleto o desactualizado.  \n• Obras que no cumplen su finalidad pública por deficiencias de diseño no detectadas a tiempo.","criterios":[{"criterio":"La entidad identifica las interferencias y establece un plan para la obtención de las licencias, autorizaciones, permisos, servidumbre y similares por parte de la entidad contratante a fin de no paralizar o suspender la ejecución de la obra.","norma":"Art. 154.1 lit. f) Reglamento D.S. N° 009-2025-EF (plan de obtención de permisos). Art. 170° Reglamento (contenido del ETO).","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → expediente → 'Documentos' → descargar ETO → verificar sección de interferencias y plan de permisos.\n• SAIP de la entidad: solicitar oficios a empresas prestadoras de servicios (agua, luz, gas, telecomunicaciones).","porque":"Las interferencias con servicios existentes no identificadas en el ETO son la principal causa de paralizaciones durante la ejecución. Si no hay plan de permisos, la obra puede detenerse por meses esperando autorizaciones gestionables antes de la convocatoria."},{"criterio":"El expediente técnico de obra incluye el sustento de la disponibilidad física del terreno (título de propiedad, acta de transferencia o resolución de afectación en uso vigente) y acta de verificación física.","norma":"Art. 154.1 lit. e) Reglamento D.S. N° 009-2025-EF (sustento de disponibilidad física del terreno). Art. 176.1 lit. e) Reglamento (condición de inicio del plazo contractual).","donde":"• SUNARP en línea: https://www.https://www.sunarp.gob.pe/p_consultaenlinea.asp/p_consultaenlinea.asp → 'Consulta de partida registral' → verificar titular y cargas del predio.\n• PLADICOP: expediente de contratación → sección documentos → acta de verificación física del terreno.\n• SAIP de la entidad: solicitar el documento de titularidad y el acta de verificación física.","porque":"Convocar una obra sin terreno disponible genera un proceso que el contratista sabe que no podrá iniciar normalmente. Un gran porcentaje de obras paralizadas en el Perú tienen problemas con el terreno, detectables antes del inicio."},{"criterio":"El expediente técnico de obra debe contar con una estructura de costos definida de acuerdo con la complejidad del proyecto.","norma":"Art. 170° Reglamento D.S. N° 009-2025-EF (estructura del ETO: presupuesto con análisis de precios y fecha de determinación).   \nArt. 5° lit. b) Ley N° 32069 (principio de eficiencia).","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → expediente → 'Documentos' → descargar ETO → verificar que análisis de precios.","porque":"Un ETO sin el sustento adecuado del costo o sin una estructura de costos de acuerdo a la complejidad de la obra puede generar que el mercado no responda a la convocatoria."},{"criterio":"En el ETO se identifica los riesgos que pueden presentarse durante el proceso de contratación (matriz de riesgos), con especial énfasis en la ejecución contractual.","norma":"Art. 6, literal c) de la Ley 32069. Gestión de riesgos en contratación pública\nArt. 156° Reglamento.. Numeral 1 y 2. (gestión de riesgos en la estrategia de contratación).","donde":"• PLADICOP: expediente de contratación → 'Estrategia de contratación' → verificar sección de riesgos.\n• SAIP de la entidad: solicitar la estrategia de contratación completa con la matriz de riesgos de la fase de ejecución.","porque":"Los riesgos de ejecución no identificados en el ETO se materializan como adicionales de obra que la entidad no puede rechazar porque no tiene documentación previa que acredite que el riesgo era previsible y debía ser asumido por el contratista."},{"criterio":"El expediente de contratación o el ETO incluye acta de consulta pública con lista de asistentes firmada, mecanismo de recojo de aportes, y evidencia de que al menos una observación ciudadana fue incorporada o respondida de manera sustentada en el ETO.","norma":"Art. 5, literal d) y g)  de la Ley 32069. Principio de eficiencia e públicidad.   \nArt. 6, literal a) y d) de la Ley 32069. Enfoque de integridad y Gobernanza de la contratación pública.","donde":"• SAIP de la entidad: solicitar el acta de consulta pública con lista de asistentes y mecanismo de recojo de aportes.\n• Portal de transparencia de la entidad: verificar publicación del acta de consulta pública, de corresponder.\n• PLADICOP: expediente de contratación → 'Documentos' → buscar acta de consulta pública.","porque":"La consulta pública previa al ETO permite que la población beneficiaria identifique errores, omisiones o condiciones locales que el proyectista no conoce. Su ausencia priva al ETO de información crítica que luego genera adicionales y paralizaciones durante la obra."},{"criterio":"El expediente técnico de obra incluye un análisis del proceso constructivo que contemple eficiencia constructiva y prácticas de sostenibilidad.","norma":"Art. 170.3° Reglamento D.S. N° 009-2025-EF (el ETO incluye análisis del proceso constructivo con eficiencia constructiva y prácticas de sostenibilidad). \nArt. 5° lit. b) Ley N° 32069 (principio de eficiencia).","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → expediente → 'Documentos' → descargar ETO → verificar sección 'Proceso constructivo' o 'Metodología constructiva'.\n• SAIP de la entidad: solicitar el ETO completo si no está disponible en PLADICOP.","porque":"El análisis del proceso constructivo permite verificar si los rendimientos del presupuesto son coherentes con la metodología propuesta. Su ausencia puede encubrir rendimientos subestimados que inflan el presupuesto, o metodologías inviables que generarán retrasos durante la ejecución."}]},{"etapa":"ACTUACIONES PREPARATORIAS","numero":3,"denominacion":"Estrategia de contratación basada en interacción real con el mercado","descripcion":"La entidad formula la estrategia de contratación con base en una interacción real con el mercado, incorpora sus resultados en el ETO antes de la convocatoria e implementa el comité de gestión de riesgos cuando corresponda, asegurando que los requisitos del proceso reflejen las capacidades reales del mercado y que la contratación se guíe por el principio de valor por el dinero.","riesgo":"Riesgo de DISEÑAR UN ESTRATEGIA DE CONTRATACION SIN INTERACCION REAL CON EL MERCADO. \nDeficiencias en la gestión de riesgos genera procesos de selección con bases que no reflejan las condiciones reales del mercado, ausencia de competencia, o se se adjudica a postores sin capacidad real o a precios que no corresponden al valor de la obra.\n\nSi no se reduce este riesgo:\n• Procesos diseñados para favorecer a un postor específico (bases restrictivas no sustentadas).\n• Riesgos identificables en la etapa preparatoria que se materializan en la ejecución del contrato. \n• Obras paralizadas por causas previsibles no gestionadas en la estrategia.","criterios":[{"criterio":"La entidad implementa un comité de gestión de riesgos (para obras cuya cuantía supere los S/ 50,000,000), quien supervisa y revisa el proceso de gestión de riesgos, bajo los principios y enfoque de la Ley 32069.","norma":"Art. 156.3° Reglamento D.S. N° 009-2025-EF (comité de gestión de riesgos para obras cuya cuantía supere los S/ 50,000,000). \nArt. 156.2° Reglamento (asignación de riesgos a la parte que pueda gestionarlos).","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → expediente de contratación o Bases → buscar resolución de conformación del comité de gestión de riesgos.\n• Portal de transparencia de la entidad: resoluciones internas → buscar resolución de designación del comité.\n• SAIP de la entidad: solicitar actas de sesión del comité de gestión de riesgos.","porque":"El comité de gestión de riesgos es el mecanismo que garantiza seguimiento activo de la contratación. Su ausencia en obras mayores a S/ 50M es un incumplimiento normativo que expone la obra a riesgos no monitoreados que se pueden materializan en incumplimiento del contrato, paralizaciones injustificadas, sobrecostos, entre otros."},{"criterio":"La interacción con el mercado prioriza la detección temprana de errores u omisiones en el expediente técnico, a fin de realizar las modificaciones al expediente técnico que sean necesarias como resultado de dicha interacción.","norma":"Art. 153.4 Reglamento (prioriza la detección oportuna de errores u omisiones en el ETO)).","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → expediente de contratación → 'Formato de Interacción con el mercado' → descargar formato o consultar informe de resultados y modificaciones al ETO realizadas.\n• SAIP de la entidad: solicitar el informe de resultados de la consulta al mercado y el acta de modificaciones al ETO.","porque":"La interacción con el mercado es el principal mecanismo que permite detectar errores u omisiones del ETO antes de la convocatoria con participación de los propios postores. Si no genera ajustes al ETO, es señal de que sería un trámite formal sin efecto real sobre la calidad del ETO."}]},{"etapa":"PROCEDIMIENTO DE SELECCIÓN","numero":4,"denominacion":"Convocatoria oportuna, completa y conforme a bases estándar","descripcion":"La convocatoria del procedimiento de selección se publica en el SEACE de la PLADICOP, de acuerdo a las bases estándar y a las condiciones normativas aplicables a la ejecución de obras.","riesgo":"Riesgo de CONVOCATORIA PREMATURA O IRREGULAR:\nConvocar un proceso sin contar con el ETO actualizado y aprobado,o con bases que no se ajustan a las bases estándar vigentes genera procesos viciados de nulidad potencial, limita la competencia efectiva y expone a la entidad a impugnaciones o cuestionamientos que retrasan la ejecución de la obra.\n\nSi no se reduce este riesgo:\n• Nulidad del proceso por incumplimiento de condiciones previas obligatorias.\n• Convocatorias diseñadas para favorecer a un postor con información privilegiada.\n• Bases que omiten el Pacto de Integridad o la DJI del postor, reduciendo los mecanismos de control social.","criterios":[{"criterio":"El comité de selección, previa a la convocatoria, cuenta con el expediente técnico de obra actualizado y aprobado y verifica que se cuenta con la libre disponibilidad del terreno.","norma":"Art. 163.1.  Reglamento D.S. N° 009-2025-EF (convocatoria del procedimiento de selección)","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → procedimiento → verificar fecha de publicación del ETO y resolución de aprobación vs. fecha de convocatoria.\n• SUNARP: https://www.https://www.sunarp.gob.pe/p_consultaenlinea.asp/p_consultaenlinea.asp → 'Consulta de partida registral' → verificar que el predio está a nombre de la entidad sin cargas.\n• Portal de transparencia de la entidad: buscar resolución de aprobación del ETO con fecha anterior a la convocatoria.","porque":"Convocar sin ETO aprobado o sin terreno disponible es uno de los factores de riesgo más frecuentes de paralización de obras. Si el proceso se convoca sobre bases incompletas, se genera una causal que podria generar adendas o ampliaciones de plazo durante la ejecución del contrato."},{"criterio":"Las bases de la contratación se elaboran conforme a la estructura establecida en las bases estándar vigentes aprobadas por el OECE y aplicable al tipo de procedimiento de selección y cuantía.","norma":"Art. 55.3° Ley N° 32069 (bases del procedimiento de selección).","donde":"• OECE – Bases estándar vigentes: https://www.gob.pe/osce → 'Instrumentos normativos' → 'Bases estándar' → descargar la versión vigente para el tipo de procedimiento y cuantía.\n• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → procedimiento → 'Bases' → comparar estructura con las bases estándar vigentes del OECE.","porque":"Las bases que no siguen la estructura de las bases estándar del OECE pueden incluir cláusulas que restringen artificialmente la competencia, exigen requisitos no autorizados o eliminan mecanismos de control obligatorios."},{"criterio":"La entidad establece y aplica el incentivo por culminación anticipada de obra de manera obligatoria.","norma":"Art. 162° lit. a) Reglamento D.S. N° 009-2025-EF (incentivo por culminación anticipada: OBLIGATORIO en contratos de solo construcción desde la etapa de bases).","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → procedimiento → 'Bases' → verificar que las bases incluyen la cláusula del incentivo con el monto del gasto general variable diario y la fórmula de cálculo explícita.\n• SAIP de la entidad: solicitar las bases integradas y el contrato para verificar que la cláusula fue incorporada.","porque":"La ausencia del incentivo por culminación anticipada en las bases de contratos de solo construcción es un incumplimiento normativo expreso. Su omisión elimina el principal mecanismo de alineación de incentivos entre la entidad y el contratista para la entrega oportuna de la obra."},{"criterio":"La entidad publica el ETO completo y la resolución que lo aprueba en el SEACE- PLADICOP en formatos que permitan ser descargados y sin restricciones de acceso.","norma":"Art. 163 Reglamento Reglamento D.S. N° 009-2025-EF (componentes mínimos del ETO).  \nArt. 5, literal g)  de la Ley 32069. Principio de publicidad.","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → procedimiento → 'Documentos del procedimiento' → verificar que el ETO completo (todos sus componentes) es descargable sin restricciones desde la fecha de convocatoria.\n• Comparar el ETO publicado en PLADICOP con los componentes mínimos del Art. 170° del Reglamento.","porque":"La publicación incompleta del ETO es una práctica que limita la competencia: solo los postores con acceso privilegiado a la información técnica completa pueden formular ofertas competitivas."},{"criterio":"Las bases establecen como requisito de admisibilidad de la oferta la presentación del Pacto de Integridad aprobado en las bases estándar y la declaración jurada de responsabilidad por la veracidad de documentos y de no encontrarse impedido para contratar con el Estado.","norma":"Art. 29.8 Ley N° 32069 (firma de pacto de integridad del postor.\nArt. 69.b Reglamento D.S. N° 009-2025-EF (pacto de integridad).","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → procedimiento → 'Bases' → verificar que incluyen los formatos del Pacto de Integridad y la DJJ de no impedimento como requisitos de admisibilidad.\n• OECE – Bases estándar: verificar que los formatos corresponden a la versión vigente aprobada por el OECE.","porque":"El Pacto de Integridad y la DJJ de no incurrir en causales de impedimento son los compromisos que concretizan los principios integridad, transparencia y rendición de cuentas, por ello su relevancia de que su presentación se verifique antes de la firma del contrato, por lo que su omisión debe ser objeto de descalificación. \n📋"}]},{"etapa":"PROCEDIMIENTO DE SELECCIÓN","numero":5,"denominacion":"Competencia efectiva y pluralidad de propuestas válidas","descripcion":"La entidad diseña las reglas del procedimiento de selección con factores de evaluación y requisitos de calificación proporcionales, razonables y congruentes con el objeto, que no restringen artificialmente la competencia, y que resultan en la presentación de al menos dos propuestas válidas de postores con capacidad real para ejecutar la obra.","riesgo":"Riesgo de COLUSIÓN Y RESTRICCIÓN ARTIFICIAL DE LA COMPETENCIA:\nBases con requisitos diseñados para excluir competidores o favorecer a un postor específico generan adjudicaciones sin competencia real, donde el precio pagado no refleja el valor de mercado y la calidad ofrecida no es la óptima para el Estado.\n\nSi no se reduce este riesgo:\n• Adjudicaciones a precios superiores al valor de mercado por ausencia de competencia.\n• Postores coludidos que simulan competencia con ofertas coordinadas.\n• Exclusión de pequeñas y medianas empresas por requisitos desproporcionados.\n• Concentración de contratos en un mismo proveedor sin justificación técnica.","criterios":[{"criterio":"Los requisitos de calificación (experiencia, capacidad técnica y financiera) son proporcionales a la complejidad y valor de la obra, sin exigencias que solo un postor del mercado puede cumplir, verificable mediante comparación con obras similares en el SEACE- PLADICOP","norma":"Art. 5° lit. h), i) y j) Ley N° 32069 (principio de libre concurrencia, transparencia y competencia).  \nRequisitos de calificación según las Bases Estándar para el caso de obras).","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → procedimiento → 'Bases' → sección 'Requisitos de calificación' → comparar con requisitos de obras similares.\n• Contrataciones Abiertas OECE: contratacionesabiertas.https://www.gob.pe/osce → filtrar por tipología, región y rango de monto → comparar requisitos de experiencia y capacidad financiera.","porque":"Los requisitos de calificación excesivos son el mecanismo más frecuente de restricción artificial de la competencia. Un requisito de experiencia que solo un postor del mercado puede cumplir predetermina la adjudicación antes de que el proceso inicie formalmente."},{"criterio":"El número de propuestas presentadas en el procedimiento de selección es mayor o igual a 3. Si se presentó solo 1 propuesta, elComité de selección informa a la DEC sobre las posibles causas de la baja competencia y recomienda las medidas para otras convocatorias similares.","norma":"Art. 5° lit. a) Ley N° 32069 (principio de competencia). \nArt. 72 y 73  Reglamento D.S. N° 009-2025-EF (requisitos de calificaciòn y evaluación de ofertas). \nArt. 84° Reglamento (declaratoria de desierto cuando no hay propuestas válidas).","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → Acta de presentación y evaluación de propuestas → verificar número de postores que presentaron propuestas válidas.\n• Contrataciones Abiertas OECE: contratacionesabiertas.https://www.gob.pe/osce → buscar el procedimiento → verificar número de participantes y propuestas.","porque":"La presentación de menos de 3 propuestas válidas es un indicador de competencia insuficiente que puede reflejar requisitos restrictivos, valor referencial inadecuado o colusión entre postores. No garantiza por sí solo integridad, pero su ausencia recurrente en una entidad es una señal de alerta."}]},{"etapa":"PROCEDIMIENTO DE SELECCIÓN","numero":6,"denominacion":"Verificación de la idoneidad y documentación del postor ganador","descripcion":"La entidad realiza la verificación de la propuesta del postor ganador a fin de asegurar que no incurre en una causal de impedimento, que los documentos son veraces y auténticos.","riesgo":"Riesgo de ADJUDICACIÓN A POSTOR IMPEDIDO O CON DOCUMENTACIÓN FALSA:\nLa falta de verificación sistemática de impedimentos y la ausencia de fiscalización posterior de documentos permiten que postores con vínculos con funcionarios de la entidad o con documentos falsos o inexactos obtengan contratos públicos, comprometiendo la ejecución de la obra y la integridad del proceso.\n\nSi no se reduce este riesgo:\n• Contratos suscritos con postores legalmente impedidos, expuestos a nulidad.\n• Contratistas sin capacidad técnica real que presentaron documentación falsa.\n• Impunidad del postor que falsificó documentos por ausencia de denuncia al TCP.","criterios":[{"criterio":"La DEC verifica los impedimentos de caracter personal (tipos 1.F y 1.G) y por parentesco (tipos 2.D y 2.E), mediante cruce de la FUP del postor con las DJI de todos los funcionarios y servidores que participaron en el proceso, lo cual debe estar documentado en el expediente de contratación antes de la suscripción del contrato.","norma":"Art. 30° Ley N° 32069 (impedimentos para contratar con el Estado: tipos 1.F, 1.G, 2.D y 2.E). \nArt. 36° Reglamento D.S. N° 009-2025-EF (FUP y verificación de impedimentos). \nArt. 35° Reglamento (fiscalización posterior).","donde":"• RNP – FUP: https://www.gob.pe/osce → RNP → 'Consulta de proveedores' → revisar conformación societaria, representantes y accionistas del postor.\n• Plataforma DJI-CGR: https://appdji.contraloria.gob.pe/djic/ → verificar DJI de funcionarios vinculados a la contratación.\n• SAIP de la entidad: solicitar el informe de verificación de impedimentos con fecha anterior a la firma del contrato.","porque":"La verificación de impedimentos antes de suscribir el contrato es el único momento en que puede anularse la adjudicación sin consecuencias contractuales graves.Si el impedimento se detecta después de iniciada la ejecución, la nulidad del contrato genera paralización de obra, retraso, responsabilidades y perjuicio al Estado."},{"criterio":"La entidad inicia la fiscalización de los documentos presentados por el postor ganador, una vez consentida la buena pro.","norma":"Art. 35 y 83  Reglamento D.S. N° 009-2025-EF (fiscalización posterior de documentos del postor ganador). \nArt. 32° Ley N° 27444 (Ley del Procedimiento Administrativo General: fiscalización posterior obligatoria).","donde":"• SAIP de la entidad: solicitar el informe de fiscalización posterior o  fecha de inicio de la fiscalización.","porque":"La fiscalización posterior sin plazo definido puede quedar pendiente indefinidamente, permitiendo que un postor con documentación falsa ejecute el contrato completo sin consecuencias."},{"criterio":"El OEC emite el informe de resultados de fiscalización posterior y concluye que no hay documentos falsos o inexactos en la propuesta del postor ganador.","norma":"","donde":"","porque":"El informe de fiscalización que no concluye categóricamente sobre la veracidad de los documentos no tiene efecto sancionador. Un informe con conclusión ambigua o que no determina si hay o no ocumentación falsa o inexacta puede generar impunidad y perjuicios económicos a la entidad."},{"criterio":"El OEC informa al Tribunal de Contrataciones del Estado los resultados de la fiscalización posterior, en caso advierta documentación falsa o inexacta, a fin de que inicie el procedimiento administrativo sancionador.","norma":"","donde":"• TCP – Resoluciones: https://www.gob.pe/osce/tribunal → 'Resoluciones' → buscar por RUC del postor → verificar si se inició procedimiento sancionador o existe una resolución de sanción administrativa.\n\n• SAIP de la entidad: solicitar la comunicación enviada al TCP con fecha.","porque":"La falta de comunicación al TCP cuando se detecta documentación falsa genera impunidad: el postor puede participar en otros procesos con la misma documentación falsa sin consecuencias. La comunicación oportuna al TCP activa el procedimiento sancionador que protege a otras entidades."}]},{"etapa":"EJECUCIÓN CONTRACTUAL","numero":7,"denominacion":"Suscripción del contrato con cláusulas completas y publicación oportuna","descripcion":"La entidad suscribe el contrato incluyendo todas las cláusulas obligatorias de la Ley N° 32069 —entre ellas la cláusula de gestión de riesgos—,  verifica previamente las garantías, designa al coordinador del contrato antes del inicio del plazo de ejecución, y publica el contrato en el SEACE dentro de los 10 días hábiles siguientes a su suscripción.","riesgo":"Riesgo de CONTRATO INCOMPLETO O CON CLÁUSULAS QUE CONLLEVAN AL INCUMPLIMEINTO NORMATIVO:\nUn contrato sin las cláusulas obligatorias de la Ley N° 32069, publicado fuera de plazo o sin designación del coordinador, reduce la capacidad de la entidad para gestionar la ejecución, aplicar penalidades y resolver controversias, generando incertidumbre sobre la adecuada gestión contractual.\n\nSi no se reduce este riesgo:\n• Contrato sin cláusula anticorrupción que impida invocar esta obligación frente al contratista.\n• Ausencia de garantías correctamente constituidas que protejan al Estado ante incumplimiento.\n• Inicio tardío de la ejecución por ausencia del coordinador designado.\n• Deficiencias u omisiones del ETO no detectadas antes del inicio de la ejecución.","criterios":[{"criterio":"La entidad, previo a la firma del contrato, designa a un coordinador, quien se encarga de gestionar el contrato, sin hacerse responsable de las opiniones técnicas de la supervisión de obra.","norma":"Art. 169 Reglamento D.S. N° 009-2025-EF (Obligatoriedad de designar a un coordinador ).","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → contrato → buscar resolución de designación del coordinador publicada antes del inicio del plazo del contrato.\n• Portal de transparencia de la entidad: resoluciones internas → buscar resolución de designación del coordinador con perfil y funciones.\n• SAIP de la entidad: solicitar la resolución de designación del coordinador con CV adjunto.","porque":"El coordinador es el responsable de gestionar el contrato desde la perspectiva de la entidad, incluyendo el seguimiento de plazos, la gestión de controversias y la coordinación con el supervisor. Su ausencia o designación tardía puede afectar el seguimiento o monitoreo orientado a generar aleras bajo un enfoque preventivo y colaborativo."},{"criterio":"La entidad suscribe el contrato de acuerdo con los requisitos previstos en las bases y lo publica en el SEACE de la PLADICOP máximo a los 10 días hábiles de suscrito.","norma":"Art. 13.7 Directiva N° 007-2025-OECE-CD","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → procedimiento → 'Contrato' → verificar fecha de publicación del contrato vs. fecha de suscripción.\n• SAIP de la entidad: solicitar el contrato completo con todos sus anexos si no está disponible en PLADICOP.","porque":"La publicación del contrato dentro del plazo legal permite que la sociedad civil verifique las condiciones pactadas antes de que inicie la ejecución y mejora el seguimiento de la inversión, veeduría y rendición de cuentas."},{"criterio":"La entidad establece y aplica el incentivo por culminación anticipada de obra de manera obligatoria.","norma":"Art. 162° lit. a) Reglamento D.S. N° 009-2025-EF (incentivo por culminación anticipada: OBLIGATORIO en contratos de solo construcción, con monto del gasto general variable diario y fórmula de cálculo explícita en el contrato).","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → contrato → descargar contrato completo → verificar cláusula de incentivo con monto del gasto general variable diario y fórmula de cálculo.\n• SAIP de la entidad: solicitar el contrato con el anexo de incentivos si no está en PLADICOP.","porque":"El incentivo debe estar en el contrato con la fórmula de cálculo explícita para ser exigible. Si el contrato dice que hay incentivo pero no define el monto del gasto general variable diario, el contratista no puede calcular su beneficio y el incentivo pierde su efecto motivador."},{"criterio":"El contrato incluye las siguientes cláusulas:\na) Garantías (I) de fiel cumplimiento se mantiene vigente hasta el consentimiento de la liquidación final o ii) retención)\nb) Cláusula anticorrupción y antisoborno. \nc) Solución de controversias.\nd) Resolución de contrato por incumplimiento. \ne) Gestión de riesgos.","norma":"Art. 60 Ley 32069\nArt. 182° y 183° Reglamento (garantías)","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → contrato → descargar contrato → verificar cada cláusula obligatoria.\n• SBS – Verificación de garantías: https://www.https://www.sbs.gob.pe/app/pp/sf_sbs/consulta.aspx → 'Consultas en línea' → verificar vigencia y autenticidad de cartas fianza.","porque":"Un contrato sin cláusula anticorrupción no permite invocar esa obligación frente al contratista en caso de acto de corrupción comprobado. La ausencia de la cláusula JPRD impide conformar la Junta de Prevención y Resolución de Disputas, exponiendo a la entidad a arbitrajes más costosos y lentos. La ausencia de una matriz de gestión de riesgos conlleva a que no se cumpla la finalidad pública de la contratación."},{"criterio":"La entidad verifica que el contratista presente informe técnico de revisión del ETO dentro de los 12 días siguientes a la suscripción del contrato, identificando deficiencias u omisiones, posibles prestaciones adicionales y riesgos advertidos de la revisión documental.","norma":"Art. 171.1 Reglamento D.S. N° 009-2025-EF (evisión del expediente técnico en el sistema de entrega de solo construcción para la detección temprana de deficiencias u omisiones)","donde":"• PLADICOP – Cuaderno de incidencias: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → contrato → 'Cuaderno de incidencias' → verificar si el contratista registró el informe técnico de revisión del ETO dentro de los 12 días de suscrito el contrato.\n• SAIP de la entidad: solicitar el informe técnico de revisión del ETO presentado por el contratista.","porque":"El informe de revisión del ETO por el contratista en los primeros 12 días es la oportunidad para identificar deficiencias antes de que generen paralizaciones o adicionales costosos. Si el contratista no lo presenta y la entidad no lo exige, ambos renuncian al único mecanismo de detección temprana de problemas del ETO."}]},{"etapa":"EJECUCIÓN CONTRACTUAL","numero":8,"denominacion":"Supervisión permanente, técnica e independiente de la obra","descripcion":"La entidad garantiza que la supervisión de la obra registra en el cuaderno de obra los hechos relevantes de la ejecución, realiza ensayos y pruebas de calidad conforme al ETO, emite informes mensuales con avance físico-financiero y alerta temprana de riesgos, e identifica oportunamente las causas de posibles adicionales antes de que se produzcan.","riesgo":"Riesgo de SUPERVISIÓN DEFICIENTE O CAPTURADA:\nUna supervisión ausente, complaciente o que no registra en el cuaderno de incidencias los hechos relevantes de la obra permite que el contratista ejecute trabajos de mala calidad, incumpla especificaciones técnicas o acumule retrasos sin consecuencias, generando una obra que no cumple su finalidad pública.\n\nSi no se reduce este riesgo:\n• Obras recibidas con vicios ocultos por supervisión que no verificó las especificaciones técnicas.\n• Adicionales aprobados sin sustento técnico real por supervisión que no identificó su origen.\n• Retrasos que generan mayores gastos de supervisión asumidos indebidamente por el Estado.\n• Sustitución irregular del plantel técnico sin aplicación de penalidades.","criterios":[{"criterio":"La obra cuenta con un supervisor de la ejecución de la obra desde el inicio del plazo del contrato hasta la recepción de la obra, para lo cual se designa a un jefe de supervisión, quien no puede prestar servicios en más de una obra a la vez.","norma":"Art. 186° Reglamento D.S. N° 009-2025-EF  \nArt. 187° Reglamento (funciones del supervisor).","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → contrato de supervisión → verificar que el jefe designado coincide con el propuesto en la oferta.\n• CIP – Habilitación: https://www.https://www.cip.org.pe → 'Verificación de habilitación' → ingresar número de colegiatura del jefe de supervisión.\n• CAP – Habilitación: https://www.https://www.cap.org.pe → equivalente para arquitectos.","porque":"Un supervisor verifica la ejecución del ETO de acuerdo a las condiciones establecidas en éste, por lo que es clave que este desde el principio hasta la culminación.  La prestación simultánea en más de una obra genera ausencias en la obra que impiden la verificación efectiva de la calidad."},{"criterio":"El supervisor mantiene actualizado el cuaderno de incidencias, que forma parte de la Pladicop, como medio digital a través del cual se registran, a través de anotaciones, los principales hechos que ocurren durante la ejecución de la obra, las aprobaciones de trabajos o partidas a realizarse, las consultas y sus respuestas, entre otros, las cuales se usarán como sustento para las modificaciones contractuales, según corresponda.","norma":"Art. 188° Reglamento D.S. N° 009-2025-EF (cuaderno de incidencias: obligatorio, digital, parte de PLADICOP, con anotaciones de hechos relevantes, consultas y respuestas).","donde":"• PLADICOP – Cuaderno de incidencias: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → contrato → 'Cuaderno de incidencias' → revisar frecuencia, contenido y calidad técnica de las anotaciones del supervisor.\n• Contar anotaciones por semana e identificar períodos sin anotaciones superiores a 7 días hábiles.","porque":"El cuaderno de incidencias digital es la evidencia documental de la presencia y actuación del supervisor en la obra. La ausencia de anotaciones regulares indica que el supervisor no está en la obra o no está ejerciendo sus funciones, lo que impide detectar y corregir oportunamente problemas de calidad o de avance."},{"criterio":"Cuando la valorización acumulada ejecutada es menor al 80% de la valorización acumulada programada, el supervisor ordena la presentación de un nuevo programa de ejecución acelerado dentro del plazo reglamentario y lo registra en el cuaderno de incidencias.","norma":"Art. 207° Reglamento D.S. N° 009-2025-EF (penalidad por mora: valorización acumulada ejecutada < 80% de la programada activa la obligación del supervisor de ordenar un programa de ejecución acelerado).","donde":"• PLADICOP – Cuaderno de incidencias: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → verificar si existe anotación del supervisor ordenando el programa de ejecución acelerado cuando el avance fue menor al 80% del programado.\n• SSI: https://ofi5.mef.gob.pe/ssi/ → buscar por código SNPMGI → comparar avance físico real vs. programado por período.\n• SIAF-MEF: https://www.mef.gob.pe/es/siaf → comparar valorizaciones pagadas vs. calendario valorizado del contrato.","porque":"Si el supervisor no activa el mecanismo del programa acelerado cuando el avance cae por debajo del 80%, la entidad pierde el derecho a aplicar penalidades por mora de manera documentada. La ausencia de este registro en el cuaderno de incidencias es una señal de supervisión complaciente con el retraso del contratista."},{"criterio":"La entidad se pronuncia oportunamente sobre la sustitución de integrante del plantel técnico en obra y aplica la penalidad respectiva, salvo que la sustitución se origine por caso fortuito o fuerza mayor o por un hecho sobreviniente no imputable al contratista.","norma":"Art. 189.3° Reglamento D.S. N° 009-2025-EF (sustitución de integrantes del plantel técnico: procedimiento y penalidades).","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → cuaderno de incidencias → verificar anotaciones sobre sustitución del plantel técnico y la respuesta de la entidad dentro del plazo.","porque":"La no aplicación de penalidades por sustitución del plantel técnico genera un incentivo perverso: el contratista puede presentar personal calificado en la oferta y reemplazarlo por personal de menor costo y calidad durante la ejecución sin consecuencias económicas, reduciendo la calidad de la obra sin afectar su margen."},{"criterio":"La inversión pública cuenta con información actualizada en el Sistema de Seguimiento de Inversiones (SSI) sobre el avance físico y financiero de la ejecución.","norma":"Artículo 45 de la Directiva N° 001-2019-EF/63.01 \nArtículo 5, literal i) de la Ley N° 32069 (Principio de Transparencia)","donde":"• SSI – Sistema de Seguimiento de Inversiones: https://ofi5.mef.gob.pe/ssi/ → buscar por código SNPMGI, código SIAF o nombre de la obra → verificar avance físico y financiero con fecha de última actualización.\n• Comparar el avance registrado en el SSI con el calendario valorizado del contrato publicado en PLADICOP.","porque":"El SSI desactualizado impide que la ciudadanía, el MEF y el OECE monitoreen el avance real de las obras. La falta de actualización puede encubrir paralizaciones, demoras o falta de capacidad de gestión oportuna, impidiendo la activación de los mecanismos de control y sanción."}]},{"etapa":"EJECUCIÓN CONTRACTUAL","numero":9,"denominacion":"Aprobación técnicamente sustentada de adicionales y ampliaciones de plazo","descripcion":"La entidad aprueba adicionales de obra y ampliaciones de plazo únicamente cuando están sustentados técnicamente, son aprobados dentro del plazo normativo, no superan los límites legales sin la autorización del nivel competente, y su origen no es imputable a deficiencias del ETO; garantizando que ningún adicional se aprueba en regularización ni fue ejecutado sin autorización previa.","riesgo":"Riesgo de ADICIONALES IRREGULARES O PREDISEÑADOS:\nLa aprobación de adicionales sin sustento técnico suficiente, en vía de regularización o por encima de los límites legales es el mecanismo más frecuente de sobrecosto en obras públicas. Permite transferir recursos adicionales al contratista sin competencia y puede encubrir deficiencias del ETO que eran imputables al consultor o a la propia entidad.\n\nSi no se reduce este riesgo:\n• Adicionales aprobados en regularización que encubren acuerdos informales previos a su ejecución.\n• Sobrecostos que superan los límites legales sin la autorización del nivel competente (CGR).\n• Adicionales cuya causa real son deficiencias del ETO imputables al consultor, asumidas indebidamente por el Estado.\n• Expedientes técnicos de adicionales elaborados por el propio contratista sin control independiente.","criterios":[{"criterio":"La entidad dispone la ejecución de prestaciones adicionales siempre que resulte indispensable debido a: i) deficiencias en el expediente técnico o ii) por causas no previsibles en el expediente técnico de obra o no previsibles posterior al perfeccionamiento del contrato y que no son responsabilidad del contratista; dichos adicionales no pueden superar el (50%) del monto del contrato original, estando prohibida la aprobación de prestaciones adicionales en vía de regularización","norma":"Art. 194.1 y 194.5. Reglamento D.S. N° 009-2025-EF (prestaciones adicionales de obra: procedimiento, límites y prohibición de regularización).","donde":"• SSI:  Consultar información sobre estado de la inversión y verificar si ha habido una resolución de adicional tiene fecha ANTERIOR al inicio de ejecución del adicional. Dicha información también de puede verificar en el cuaderno de incidencias.\n• CGR – Informes de control: https://appbp.contraloria.gob.pe/BuscadorCGR/informes/Avanzado.html → buscar por nombre de la obra → verificar si la CGR identificó adicionales irregulares.\n• SAIP de la entidad: solicitar los expedientes técnicos de cada adicional con la opinión técnica del órgano especializado.","porque":"Los adicionales en vía de regularización son la prueba más directa de corrupción en la ejecución de obras: significan que el contratista ejecutó trabajos adicionales sin autorización previa, lo que solo es posible si existe un acuerdo informal previo con funcionarios de la entidad. La prohibición del Art. 194.3° es expresa y su incumplimiento genera responsabilidad administrativa y penal."}]},{"etapa":"EJECUCIÓN CONTRACTUAL","numero":10,"denominacion":"Valorizaciones y pagos oportunos, verificados y correctamente calculados","descripcion":"La entidad aprueba las valorizaciones dentro del plazo normativo, con verificación técnica de la supervisión sobre los metrados ejecutados y efectúa los pagos únicamente contra valorización aprobada; previniendo tanto la retención indebida de pagos, el pago por trabajos no ejecutados o la suspensión por falta de pago de dos valorizaciones consecuetivas.","riesgo":"Riesgo de RETENCIÓN INDEBIDA DE PAGOS O PAGOS SIN SUSTENTO:\nEl retraso injustificado en el pago de valorizaciones genera presiones sobre el contratista que pueden derivar en acuerdos informales para agilizar los pagos, en tanto que el pago sin verificación técnica permite que el contratista cobre por trabajos no ejecutados o mal ejecutados.\n\nSi no se reduce este riesgo:\n• Suspensión de la ejecución de la obra por falta de pago, con reconocimiento forzado de costos adicionales.\n• Acuerdos informales entre el contratista y funcionarios para agilizar el pago a cambio de beneficios indebidos.\n• Pagos por trabajos no ejecutados por ausencia de verificación técnica independiente.\n• Pérdida del derecho a reajustes por omisión en el cálculo de fórmulas polinómicas.","criterios":[{"criterio":"La entidad contratante evalúa y paga la valorización hasta el último día del mes en que es presentada, salvo hubieran observaciones.","norma":"Art. 210  Reglamento D.S. N° 009-2025-EF","donde":"• SIAF-MEF: https://www.mef.gob.pe/es/siaf → consulta de ejecución de gasto → buscar por entidad y contrato → verificar fecha y monto de cada pago de valorización.\n• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → contrato → 'Valorizaciones' → verificar fechas de presentación, aprobación y pago.\n• Comparar fechas de presentación de cada valorización con la fecha de pago en el SIAF.","porque":"El retraso en el pago de valorizaciones genera presiones económicas sobre el contratista que frecuentemente derivan en acuerdos informales para agilizar los pagos a cambio de beneficios indebidos a funcionarios."},{"criterio":"La entidad no acumula deuda de 2 o más valorizaciones consecutivas sin pago a favor del contratista.","norma":"Art. 202.3° Reglamento D.S. N° 009-2025-EF (falta de pago de 2 valorizaciones consecutivas: derecho del contratista a anotar suspensión en el cuaderno de incidencias y reconocimiento de costos directos y gastos generales por el período de suspensión).","donde":"• PLADICOP – Cuaderno de incidencias: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → 'Cuaderno de incidencias' → verificar si existe anotación de suspensión por falta de pago de 2 valorizaciones consecutivas.\n• SIAF-MEF: https://www.mef.gob.pe/es/siaf → verificar si hay deuda de 2 o más valorizaciones sin pago.\n• SAIP de la entidad: solicitar las valorizaciones aprobadas y los comprobantes de pago.","porque":"La suspensión de obra por falta de pago es uno de los mecanismos de paralización más frecuentes y genera reconocimiento de costos adicionales para el Estado. Si la entidad no paga oportunamente y el contratista no anota formalmente la suspensión, la situación puede usarse como pretexto para solicitar adicionales informales."},{"criterio":"La entidad verifica que en la última valorización, el contratista entrega los planos post construcción, de lo contrario la entidad suspende su pago.","norma":"Art. 210.10° Reglamento D.S. N° 009-2025-EF","donde":"• PLADICOP: https://prodapp2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml → contrato → 'Valorizaciones' → última valorización → verificar que incluye constancia de entrega de planos post-construcción.\n• SAIP de la entidad: solicitar los planos post-construcción y el acuse de recibo firmado.\n• SIAF-MEF: verificar que el pago de la última valorización se realizó después de la entrega de los planos.","porque":"Los planos post-construcción reflejan la obra realmente ejecutada, que puede diferir del ETO original por las modificaciones aprobadas. Sin ellos, la entidad no puede operar ni mantener la infraestructura correctamente, y no puede verificar si lo que se pagó corresponde a lo que se construyó."}]},{"etapa":"EJECUCIÓN CONTRACTUAL","numero":11,"denominacion":"Implementación oportuna de las medidas correctivas ante informes de la CGR","descripcion":"La entidad implementa las medidas correctivas indicadas en los informes de la CGR dentro de los plazos establecidos, comunica formalmente a la Contraloría las acciones adoptadas y sus resultados, y adopta medidas preventivas para evitar que las mismas irregularidades se repitan en contratos posteriores.","riesgo":"Riesgo de NO IMPLEMENTAR LAS SITUACIONES ADVERSAS DE LA CGR DE MANERA OPORTUNA \nLa no implementación oportuna de las recomendaciones de la CGR permite que las irregularidades identificadas se consoliden, se repitan en contratos posteriores y generen responsabilidades administrativas, civiles o penales para los funcionarios y perjuicio económico para el Estado.\n\nSi no se reduce este riesgo:\n• Irregularidades reiteradas que indican una gestión sistemáticamente deficiente o deliberadamente irregular.\n• Responsabilidades administrativas y penales para funcionarios que ignoraron los informes de control.\n• Pérdida de fondos públicos no recuperados por falta de acción oportuna.\n• Pérdida de confianza ciudadana en la gestión de la inversión pública.\nLas entidades no adoptan acciones para superar las situaciones adversas identificadas por la CGR ni comunican las medidas implementadas, lo cual puede originar la determinación de responsabilidad administrativa, civil o penal en los funcionarios vinculados.","criterios":[{"criterio":"La entidad notifica a la CGR la implementación de las medidas preventivas y correctivas dentro de los 3 meses de recibido el informe de control, registrando el estado de implementación en el sistema de seguimiento de la CGR.","norma":"Numeral 6.1.8.2 de la Directiva N° 013-2022-CG/NORM - Directiva de Servicio de Control Simultáneo.","donde":"• CGR – Informes de control: https://appbp.contraloria.gob.pe/BuscadorCGR/informes/Avanzado.html → descargar el informe de control → verificar las situaciones adversas identificadas y la fecha de notificación del informe a la entidad.","porque":"La notificación tardía a la CGR sobre la implementación de medidas correctivas impide el seguimiento oportuno y puede indicar que las medidas no fueron implementadas realmente. El plazo de 3 meses es el estándar para que las correcciones tengan efecto antes de que el perjuicio económico al Estado se consolide."},{"criterio":"El porcentaje de situaciones adversas corregidas, de acuerdo a la evaluación de seguimiento de la CGR, es mayor o igual al 75% dentro de los 6 meses de recibido el informe de control.","norma":"Numeral 6.1.8.2 de la Directiva N° 013-2022-CG/NORM - Directiva de Servicio de Control Simultáneo.","donde":"• CGR – Informes de seguimiento: https://appbp.contraloria.gob.pe/BuscadorCGR/informes/Avanzado.html → buscar informes de seguimiento sobre la misma obra o entidad. Verificar el porcentaje de situaciones adversas con estado 'implementada' vs. 'pendiente' en el período evaluado.","porque":"Un porcentaje de corrección inferior al 75% indica que la entidad no está tomando en serio las observaciones de la CGR, lo que genera reincidencia en las mismas irregularidades y responsabilidad administrativa para los funcionarios. La sociedad civil puede usar este indicador para identificar entidades con gestión sistemáticamente deficiente."}]},{"etapa":"EJECUCIÓN CONTRACTUAL","numero":12,"denominacion":"Recepción rigurosa de obra conforme al ETO y liquidación oportuna","descripcion":"La entidad recibe la obra solo cuando la comisión de recepción verifica técnicamente que cumple las especificaciones del ETO y las modificaciones aprobadas, las observaciones identificadas son levantadas de manera efectiva, la liquidación se elabora y aprueba dentro del plazo normativo, y la garantía de fiel cumplimiento se devuelve únicamente después de aprobada la liquidación.","riesgo":"Riesgo de RECEPCIÓN DE OBRA DEFICIENTE O CON VICIOS OCULTOS:\nUna recepción de obra realizada sin verificación técnica rigurosa, sin participación de veedores independientes o con observaciones levantadas de manera formal pero no real, permite que el Estado reciba y pague por una obra que no cumple las especificaciones técnicas ni sirve adecuadamente a su finalidad pública.\n\nSi no se reduce este riesgo:\n• Obras recibidas con defectos estructurales o funcionales que generan costos adicionales de reparación.\n• Liquidaciones que reconocen saldos a favor del contratista sin sustento en la obra ejecutada.\n• Garantías de fiel cumplimiento retenidas indebidamente o devueltas sin verificación del cumplimiento contractual.\n• Obras que no entran en operación por deficiencias no identificadas en la recepción.","criterios":[{"criterio":"Dentro de los 15 días desde remitido el certificado de conformidad técnica del supervisor, el comité de recepción verifica in situ el cumplimiento contractual y el correcto funcionamiento u operatividad de la edificación o infraestructura culminada y equipos, en caso corresponda.","norma":"Art. 212.3° Reglamento D.S. N° 009-2025-EF","donde":"• PLADICOP – Cuaderno de incidencias: verificar la anotación del contratista solicitando la recepción y la fecha del certificado del supervisor.\n* Verificar la fecha de verificación in situ vs. fecha del certificado de conformidad técnica","porque":"La verificación in situ fuera del plazo de 15 días puede indicar que el comité no realizó la verificación con el rigor necesario o que la obra tenía problemas que retrasaron la confirmación de su cumplimiento. El incumplimiento del plazo sin justificación es un incumplimiento normativo que favorece al contratista."},{"criterio":"Culminada la verificación, el contratista, el supervisor y el comité de recepción suscriben el acta de recepción de obra si no existen observaciones. De existir observaciones, el comité emite el pliego de observaciones y no recibe la obra.","norma":"Art. 212.4° Reglamento D.S. N° 009-2025-EF","donde":"* Acta de recepeción.\n• SAIP de la entidad: solicitar el acta de recepción completa con los documentos de sustento de la verificación in situ.","porque":"Un acta de recepción firmada por todos los actores —incluyendo el supervisor— es la única evidencia que acredita que la obra fue verificada y cumple las especificaciones contractuales. La ausencia de firma del supervisor en el acta es una señal de que existen discrepancias técnicas no resueltas que fueron ignoradas para formalizar la recepción."},{"criterio":"El Colegio de Ingenieros, el Colegio de Arquitectos, el OCI de la entidad o un representante de la población beneficiaria participan en la verificación in situ, sin integrar el comité de recepcin. Su participación queda acreditada en el acta de recepción.","norma":"Art. 212.2° Reglamento D.S. N° 009-2025-EF","donde":"• SAIP de la entidad: solicitar la comunicación enviada al CIP, CAP o a la población beneficiaria invitándolos a participar en la recepción de obra.","porque":"La participación de la sociedad civil, organizados en colegios profesionales o usuarios finales de la inversión, en la recepción de obra es un mecanismo de control externo en esta etapa crítica. Su ausencia permite que el comité de recepción —integrado por funcionarios de la propia entidad— levante observaciones sin verificación real, generando complicidad institucional en la aceptación de obras deficientes."},{"criterio":"La entidad emite su pronunciamiento dentro de los 15 días siguientes de presentada la liquidación por parte del contratista, el pago final y la devolución de la garantía de fiel cumplimiento se realizan dentro del plazo legal una vez consentida la liquidación.","norma":"Art. 215° Reglamento D.S. N° 009-2025-EF (liquidación del contrato de obra)","donde":"• Verificar en el cuaderno de incidencias si la liquidación fue presentada dentro del plazo y si la entidad se pronuncio dentro de los 15 dias de presenatda.  \n* Verificar en el SSI o via SAIP que el pago final fue realizado después del consentimiento de la liquidación, así como la devolución de la garantía.","porque":"La liquidación tardía o no resuelta es un mecanismo de presión sobre el contratista: mientras no hay liquidación consentida, el contratista no recibe el pago final ni recupera su garantía. Esta situación genera presiones para llegar a acuerdos informales desventajosos. La retención de la garantía más allá del consentimiento de la liquidación sin controversia activa es un acto ilegal."}]}];
+var ECFG={
+  "ACTUACIONES PREPARATORIAS":{cls:"prep",label:"Actuaciones Preparatorias"},
+  "PROCEDIMIENTO DE SELECCION":{cls:"prep",label:"Actuaciones Preparatorias"},
+  "PROCEDIMIENTO DE SELECCIÓN":{cls:"sel",label:"Procedimiento de Selección"},
+  "EJECUCIÓN CONTRACTUAL":{cls:"ejec",label:"Ejecución Contractual"}
+};
+var curFilter="all",curSearch="",reviewed={};
+
+function esc(s){
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+function linkify(text){
+  var t=esc(text);
+  var parts=t.split(" ");
+  return parts.map(function(w){
+    var c=w.replace(/^[&bull;\s]+/,"").replace(/[.,;:>]+$/,"");
+    if(c.length>5 && c.indexOf(".")>0 && c.indexOf(" ")<0 && /\.[a-z]{2,4}$/i.test(c)){
+      var href=(c.indexOf("http")===0)?c:"https://"+c;
+      return w.replace(c,"<a class=\"plink\" href=\""+href+"\" target=\"_blank\" rel=\"noopener\">&#128279; "+c+"</a>");
+    }
+    return w;
+  }).join(" ");
+}
+
+function hlSearch(text,search){
+  if(!search)return text;
+  var s=search.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
+  return text.replace(new RegExp("("+s+")","gi"),"<mark>$1</mark>");
+}
+
+function buildCards(filter,search){
+  var cont=document.getElementById("cards");
+  var noRes=document.getElementById("noRes");
+  cont.innerHTML="";
+  var total=0;
+  var phases=[
+    {key:"prep",etapa:"ACTUACIONES PREPARATORIAS",badge:"sbadge-prep"},
+    {key:"sel",etapa:"PROCEDIMIENTO DE SELECCIÓN",badge:"sbadge-sel"},
+    {key:"ejec",etapa:"EJECUCIÓN CONTRACTUAL",badge:"sbadge-ejec"}
+  ];
+  phases.forEach(function(ph){
+    if(filter!=="all"&&filter!==ph.key)return;
+    var stds=DATA.filter(function(d){
+      if(ECFG[d.etapa]===undefined)return false;
+      if(ECFG[d.etapa].cls!==ph.key)return false;
+      if(!search)return true;
+      var hay=[d.denominacion,d.descripcion,d.riesgo].concat(
+        d.criterios.map(function(c){return c.criterio+" "+c.donde+" "+c.porque+" "+c.norma;}))
+        .join(" ").toLowerCase();
+      return hay.indexOf(search.toLowerCase())>=0;
+    });
+    if(!stds.length)return;
+    total+=stds.length;
+    var sec=document.createElement("div");
+    var pl=stds.length>1?"es":"";
+    sec.innerHTML="<div class=\"section-header\"><div class=\"sbadge "+ph.badge+"\">"+ECFG[ph.etapa].label+"</div><div class=\"sline\"></div><div class=\"scnt\">"+stds.length+" est\u00e1ndar"+pl+"</div></div>";
+    stds.forEach(function(std){sec.appendChild(buildCard(std,search));});
+    cont.appendChild(sec);
+  });
+  noRes.style.display=(total===0)?"block":"none";
+}
+
+function buildCard(std,search){
+  var cfg=ECFG[std.etapa];
+  if(!cfg)return document.createElement("div");
+  var cls=cfg.cls;
+  var rl=std.riesgo.split("\n");
+  var rName=rl[0].replace(/^Riesgo de /i,"").split(":")[0].trim();
+  var rBody=rl.slice(1).join("\n").trim();
+  var wrap=document.createElement("div");
+  wrap.className="card"+(reviewed[std.numero]?" open":"");
+  wrap.id="card-"+std.numero;
+  var cH="";
+  std.criterios.forEach(function(c,ci){
+    var dL=linkify(c.donde);
+    var pE=esc(c.porque);
+    var nE=esc(c.norma);
+    var cE=hlSearch(esc(c.criterio),search);
+    var nP=nE?"<div class=\"dpanel dpanel-full\"><div class=\"dlabel dl-norma\"><span>&#128203;</span> Base Normativa</div><div class=\"dcontent\">"+nE+"</div></div>":"";
+    cH+="<div class=\"criterion\" id=\"crit-"+std.numero+"-"+ci+"\">"
+      +"<div class=\"crit-hdr\" onclick=\"toggleCrit("+std.numero+","+ci+")\">"
+      +"<div class=\"crit-dot dot-"+cls+"\">"+(ci+1)+"</div>"
+      +"<div class=\"crit-text\">"+cE+"</div>"
+      +"<div class=\"crit-chev\">&#9660;</div>"
+      +"</div>"
+      +"<div class=\"crit-detail\"><div class=\"detail-grid\">"
+      +"<div class=\"dpanel\"><div class=\"dlabel dl-donde\"><span>&#128269;</span> Dónde Verificar</div><div class=\"dcontent\">"+dL+"</div></div>"
+      +"<div class=\"dpanel\"><div class=\"dlabel dl-porque\"><span>&#128161;</span> Por Qué Verificar</div><div class=\"dcontent\">"+pE+"</div></div>"
+      +nP
+      +"</div></div></div>";
+  });
+  var nc=std.criterios.length;
+  wrap.innerHTML=
+    "<div class=\"card-hdr\" onclick=\"toggleCard("+std.numero+")\">"
+    +"<div class=\"card-num num-"+cls+"\">"+std.numero+"</div>"
+    +"<div class=\"card-meta\">"
+    +"<div class=\"card-etag etag-"+cls+"\">"+cfg.label+"</div>"
+    +"<div class=\"card-title\">"+hlSearch(esc(std.denominacion),search)+"</div>"
+    +"</div>"
+    +"<div class=\"card-right\">"
+    +"<span class=\"cbadge\">"+nc+" criterio"+(nc>1?"s":"")+"</span>"
+    +"<span class=\"risk-pill\">&#9888; Riesgo</span>"
+    +"<span class=\"chevron\">&#9660;</span>"
+    +"</div></div>"
+    +"<div class=\"card-body\">"
+    +"<div class=\"desc-strip\"><strong>&#10004; Estándar</strong>"+hlSearch(esc(std.descripcion),search)+"</div>"
+    +"<div class=\"risk-banner\"><div class=\"ri\">&#9888;&#65039;</div><div>"
+    +"<div class=\"risk-name\">"+esc(rName)+"</div>"
+    +"<div class=\"risk-desc\">"+esc(rBody)+"</div>"
+    +"</div></div>"
+    +"<div class=\"crit-header-row\">&#10004; Criterios de Cumplimiento &middot; haz clic en cada criterio</div>"
+    +cH+"</div>";
+  return wrap;
+}
+
+function toggleCard(num){
+  var c=document.getElementById("card-"+num);
+  c.classList.toggle("open");
+  if(c.classList.contains("open")){reviewed[num]=true;updateProgress();}
+}
+function toggleCrit(sn,ci){
+  document.getElementById("crit-"+sn+"-"+ci).classList.toggle("open");
+}
+function expandAll(open){
+  document.querySelectorAll(".card").forEach(function(c){open?c.classList.add("open"):c.classList.remove("open");});
+  document.querySelectorAll(".criterion").forEach(function(c){open?c.classList.add("open"):c.classList.remove("open");});
+  if(open){DATA.forEach(function(d){reviewed[d.numero]=true;});updateProgress();}
+}
+function setFilter(f,btn){
+  curFilter=f;
+  document.querySelectorAll(".fbtn").forEach(function(b){
+    b.className="fbtn";
+    if(b.dataset.f===f)b.classList.add("active-"+f);
+  });
+  buildCards(curFilter,curSearch);
+}
+function doSearch(val){
+  curSearch=val.trim();
+  buildCards(curFilter,curSearch);
+  if(curSearch){
+    setTimeout(function(){
+      document.querySelectorAll(".card").forEach(function(c){c.classList.add("open");});
+      document.querySelectorAll(".criterion").forEach(function(c){c.classList.add("open");});
+    },60);
+  }
+}
+function updateProgress(){
+  var count=Object.keys(reviewed).length;
+  var pct=Math.round((count/DATA.length)*100);
+  document.getElementById("progFill").style.width=pct+"%";
+  document.getElementById("progCount").textContent=count+" / "+DATA.length+" estándares revisados";
+}
+
+function goToStd(num){
+  var card=document.getElementById("card-"+num);
+  if(!card){
+function handleFormSubmit(e){
+  e.preventDefault();
+  var form=e.target;
+  var data=new FormData(form);
+  fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},
+    body:new URLSearchParams(data).toString()})
+  .then(function(){
+    form.style.display="none";
+    document.getElementById("form-success").style.display="block";
+  })
+  .catch(function(){
+    alert("Error al enviar. Por favor escríbenos a gobiernoeintegridad@gmail.com");
+  });
+}
+
+buildCards("all","");card=document.getElementById("card-"+num);}
+  if(card){
+    card.classList.add("open");
+    reviewed[num]=true;
+    updateProgress();
+    setTimeout(function(){card.scrollIntoView({behavior:"smooth",block:"start"});},100);
+  }
+}
+
+function handleFormSubmit(e){
+  e.preventDefault();
+  var form=e.target;
+  var data=new FormData(form);
+  fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},
+    body:new URLSearchParams(data).toString()})
+  .then(function(){
+    form.style.display="none";
+    document.getElementById("form-success").style.display="block";
+  })
+  .catch(function(){
+    alert("Error al enviar. Por favor escríbenos a gobiernoeintegridad@gmail.com");
+  });
+}
+
+buildCards("all","");
+</script>
+
+<!-- BOTÓN WHATSAPP FLOTANTE -->
+<a href="https://wa.me/51990236589?text=Hola%2C%20tengo%20una%20consulta%20sobre%20la%20Guía%20de%2012%20Estándares%20de%20Integridad%20en%20Obras%20Públicas"
+   target="_blank" rel="noopener"
+   style="position:fixed;bottom:24px;right:24px;z-index:9999;
+          background:#25D366;color:#fff;border-radius:50px;
+          padding:14px 20px;display:flex;align-items:center;gap:10px;
+          box-shadow:0 4px 20px rgba(37,211,102,.5);
+          text-decoration:none;font-family:Arial,sans-serif;
+          font-size:14px;font-weight:700;transition:all .2s"
+   onmouseover="this.style.transform='scale(1.05)'"
+   onmouseout="this.style.transform='scale(1)'">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.558 4.118
